@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		754E1020264FB028008FB2E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E101F264FB028008FB2E4 /* SettingsViewController.swift */; };
+		756CDF112659656900790CB9 /* CopyWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CDF102659656900790CB9 /* CopyWindowViewController.swift */; };
+		7576AFAA2662C24A0021B552 /* splitps3iso in Resources */ = {isa = PBXBuildFile; fileRef = 7576AFA52662C24A0021B552 /* splitps3iso */; };
+		7576AFAB2662C24A0021B552 /* extractps3iso in Resources */ = {isa = PBXBuildFile; fileRef = 7576AFA62662C24A0021B552 /* extractps3iso */; };
+		7576AFAC2662C24A0021B552 /* makeps3iso in Resources */ = {isa = PBXBuildFile; fileRef = 7576AFA72662C24A0021B552 /* makeps3iso */; };
+		7576AFAD2662C24A0021B552 /* gsplit in Resources */ = {isa = PBXBuildFile; fileRef = 7576AFA82662C24A0021B552 /* gsplit */; };
+		7576AFAE2662C24A0021B552 /* patchps3iso in Resources */ = {isa = PBXBuildFile; fileRef = 7576AFA92662C24A0021B552 /* patchps3iso */; };
+		7581C41426501C1A00B558C4 /* PS2WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581C41326501C1A00B558C4 /* PS2WindowController.swift */; };
+		75961D09264E572600CC9150 /* MergeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D08264E572600CC9150 /* MergeTableViewController.swift */; };
+		75961D0B264E59EC00CC9150 /* HomebrewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D0A264E59EC00CC9150 /* HomebrewTableViewController.swift */; };
+		75BD260B265061760050DA7C /* PS3ISOToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */; };
+		75CA4516265843F000FDC5D1 /* ffplay in Resources */ = {isa = PBXBuildFile; fileRef = 75CA4513265843F000FDC5D1 /* ffplay */; };
+		75CA451926584C0300FDC5D1 /* unar in Resources */ = {isa = PBXBuildFile; fileRef = 75CA451826584C0300FDC5D1 /* unar */; };
+		75CEDC7726510CAF0096DC7D /* BackupManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDC7626510CAF0096DC7D /* BackupManagerViewController.swift */; };
+		75CEDC79265168B60096DC7D /* FormatDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */; };
+		75D88AD12647CDD6001ABBFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D88AD02647CDD6001ABBFA /* AppDelegate.swift */; };
+		75D88AD32647CDD6001ABBFA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D88AD22647CDD6001ABBFA /* MainWindowController.swift */; };
+		75D88AD52647CDD7001ABBFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D88AD42647CDD7001ABBFA /* Assets.xcassets */; };
+		75D88AD82647CDD7001ABBFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D88AD62647CDD7001ABBFA /* Main.storyboard */; };
+		75E1737D26601D6E00FE6BC7 /* binmerge in Resources */ = {isa = PBXBuildFile; fileRef = 75E1737C26601D6E00FE6BC7 /* binmerge */; };
+		C2D9F0552909A4FD00358BFC /* sfoutil in Resources */ = {isa = PBXBuildFile; fileRef = C2D9F0542909A4FD00358BFC /* sfoutil */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		754E101F264FB028008FB2E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		756CDF102659656900790CB9 /* CopyWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyWindowViewController.swift; sourceTree = "<group>"; };
+		7576AFA52662C24A0021B552 /* splitps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = splitps3iso; path = ../../../Downloads/tools/splitps3iso; sourceTree = "<group>"; };
+		7576AFA62662C24A0021B552 /* extractps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = extractps3iso; path = ../../../Downloads/tools/extractps3iso; sourceTree = "<group>"; };
+		7576AFA72662C24A0021B552 /* makeps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = makeps3iso; path = ../../../Downloads/tools/makeps3iso; sourceTree = "<group>"; };
+		7576AFA82662C24A0021B552 /* gsplit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = gsplit; path = ../../../Downloads/tools/gsplit; sourceTree = "<group>"; };
+		7576AFA92662C24A0021B552 /* patchps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = patchps3iso; path = ../../../Downloads/tools/patchps3iso; sourceTree = "<group>"; };
+		7581C41326501C1A00B558C4 /* PS2WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS2WindowController.swift; sourceTree = "<group>"; };
+		758CAA5826626E32004040D5 /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon.png; path = ../../Imgs/AppIcon.png; sourceTree = "<group>"; };
+		758CAA59266272A2004040D5 /* PSMT.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = PSMT.icns; path = ../../Imgs/PSMT.icns; sourceTree = "<group>"; };
+		758CAA5A26628250004040D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		75961D08264E572600CC9150 /* MergeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTableViewController.swift; sourceTree = "<group>"; };
+		75961D0A264E59EC00CC9150 /* HomebrewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewTableViewController.swift; sourceTree = "<group>"; };
+		75BB108D266169220011EEC7 /* BackgroundTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundTasks.framework; path = System/Library/Frameworks/BackgroundTasks.framework; sourceTree = SDKROOT; };
+		75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS3ISOToolsViewController.swift; sourceTree = "<group>"; };
+		75CA4513265843F000FDC5D1 /* ffplay */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = ffplay; path = ../../../Downloads/tools/ffplay; sourceTree = "<group>"; };
+		75CA451826584C0300FDC5D1 /* unar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = unar; path = ../../../Downloads/tools/unar; sourceTree = "<group>"; };
+		75CEDC7626510CAF0096DC7D /* BackupManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManagerViewController.swift; sourceTree = "<group>"; };
+		75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDriveViewController.swift; sourceTree = "<group>"; };
+		75D88ACD2647CDD6001ABBFA /* PS Mac Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PS Mac Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75D88AD02647CDD6001ABBFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		75D88AD22647CDD6001ABBFA /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		75D88AD42647CDD7001ABBFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		75D88AD72647CDD7001ABBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		75D88AD92647CDD7001ABBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75D88ADA2647CDD7001ABBFA /* PS_Mac_Tools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PS_Mac_Tools.entitlements; sourceTree = "<group>"; };
+		75E1737C26601D6E00FE6BC7 /* binmerge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = binmerge; path = ../../../Downloads/tools/binmerge; sourceTree = "<group>"; };
+		C2D9F0542909A4FD00358BFC /* sfoutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; name = sfoutil; path = ../../../Downloads/tools/sfoutil; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75D88ACA2647CDD6001ABBFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75BB108C266169220011EEC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				758CAA5A26628250004040D5 /* QuartzCore.framework */,
+				758CAA59266272A2004040D5 /* PSMT.icns */,
+				758CAA5826626E32004040D5 /* AppIcon.png */,
+				75BB108D266169220011EEC7 /* BackgroundTasks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75D88AC42647CDD6001ABBFA = {
+			isa = PBXGroup;
+			children = (
+				75D88ACF2647CDD6001ABBFA /* PS Mac Tools */,
+				75D88ACE2647CDD6001ABBFA /* Products */,
+				75BB108C266169220011EEC7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		75D88ACE2647CDD6001ABBFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75D88ACD2647CDD6001ABBFA /* PS Mac Tools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75D88ACF2647CDD6001ABBFA /* PS Mac Tools */ = {
+			isa = PBXGroup;
+			children = (
+				C2D9F0542909A4FD00358BFC /* sfoutil */,
+				7576AFA62662C24A0021B552 /* extractps3iso */,
+				7576AFA82662C24A0021B552 /* gsplit */,
+				7576AFA72662C24A0021B552 /* makeps3iso */,
+				7576AFA92662C24A0021B552 /* patchps3iso */,
+				7576AFA52662C24A0021B552 /* splitps3iso */,
+				75E1737C26601D6E00FE6BC7 /* binmerge */,
+				75CA451826584C0300FDC5D1 /* unar */,
+				75CA4513265843F000FDC5D1 /* ffplay */,
+				75D88AD02647CDD6001ABBFA /* AppDelegate.swift */,
+				75D88AD22647CDD6001ABBFA /* MainWindowController.swift */,
+				7581C41326501C1A00B558C4 /* PS2WindowController.swift */,
+				75D88AD42647CDD7001ABBFA /* Assets.xcassets */,
+				75D88AD62647CDD7001ABBFA /* Main.storyboard */,
+				75D88AD92647CDD7001ABBFA /* Info.plist */,
+				75D88ADA2647CDD7001ABBFA /* PS_Mac_Tools.entitlements */,
+				75961D08264E572600CC9150 /* MergeTableViewController.swift */,
+				75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */,
+				75961D0A264E59EC00CC9150 /* HomebrewTableViewController.swift */,
+				754E101F264FB028008FB2E4 /* SettingsViewController.swift */,
+				75CEDC7626510CAF0096DC7D /* BackupManagerViewController.swift */,
+				75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */,
+				756CDF102659656900790CB9 /* CopyWindowViewController.swift */,
+			);
+			path = "PS Mac Tools";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75D88ACC2647CDD6001ABBFA /* PS Mac Tools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75D88ADD2647CDD7001ABBFA /* Build configuration list for PBXNativeTarget "PS Mac Tools" */;
+			buildPhases = (
+				75D88AC92647CDD6001ABBFA /* Sources */,
+				75D88ACA2647CDD6001ABBFA /* Frameworks */,
+				75D88ACB2647CDD6001ABBFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PS Mac Tools";
+			packageProductDependencies = (
+			);
+			productName = "PS Mac Tools";
+			productReference = 75D88ACD2647CDD6001ABBFA /* PS Mac Tools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75D88AC52647CDD6001ABBFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					75D88ACC2647CDD6001ABBFA = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
+					};
+				};
+			};
+			buildConfigurationList = 75D88AC82647CDD6001ABBFA /* Build configuration list for PBXProject "PS Mac Tools" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 75D88AC42647CDD6001ABBFA;
+			packageReferences = (
+			);
+			productRefGroup = 75D88ACE2647CDD6001ABBFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75D88ACC2647CDD6001ABBFA /* PS Mac Tools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75D88ACB2647CDD6001ABBFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7576AFAE2662C24A0021B552 /* patchps3iso in Resources */,
+				7576AFAB2662C24A0021B552 /* extractps3iso in Resources */,
+				75D88AD52647CDD7001ABBFA /* Assets.xcassets in Resources */,
+				7576AFAC2662C24A0021B552 /* makeps3iso in Resources */,
+				75D88AD82647CDD7001ABBFA /* Main.storyboard in Resources */,
+				7576AFAD2662C24A0021B552 /* gsplit in Resources */,
+				75CA4516265843F000FDC5D1 /* ffplay in Resources */,
+				7576AFAA2662C24A0021B552 /* splitps3iso in Resources */,
+				C2D9F0552909A4FD00358BFC /* sfoutil in Resources */,
+				75CA451926584C0300FDC5D1 /* unar in Resources */,
+				75E1737D26601D6E00FE6BC7 /* binmerge in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75D88AC92647CDD6001ABBFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75961D0B264E59EC00CC9150 /* HomebrewTableViewController.swift in Sources */,
+				756CDF112659656900790CB9 /* CopyWindowViewController.swift in Sources */,
+				75D88AD32647CDD6001ABBFA /* MainWindowController.swift in Sources */,
+				75D88AD12647CDD6001ABBFA /* AppDelegate.swift in Sources */,
+				75BD260B265061760050DA7C /* PS3ISOToolsViewController.swift in Sources */,
+				75CEDC7726510CAF0096DC7D /* BackupManagerViewController.swift in Sources */,
+				7581C41426501C1A00B558C4 /* PS2WindowController.swift in Sources */,
+				75CEDC79265168B60096DC7D /* FormatDriveViewController.swift in Sources */,
+				754E1020264FB028008FB2E4 /* SettingsViewController.swift in Sources */,
+				75961D09264E572600CC9150 /* MergeTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		75D88AD62647CDD7001ABBFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75D88AD72647CDD7001ABBFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75D88ADB2647CDD7001ABBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		75D88ADC2647CDD7001ABBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		75D88ADE2647CDD7001ABBFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PS Mac Tools/PS_Mac_Tools.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "PS Mac Tools/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PS Mac Tools";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "SvenGDK.PS-Mac-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		75D88ADF2647CDD7001ABBFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PS Mac Tools/PS_Mac_Tools.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				ENABLE_HARDENED_RUNTIME = NO;
+				INFOPLIST_FILE = "PS Mac Tools/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "PS Mac Tools";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "SvenGDK.PS-Mac-Tools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OBJC_INTERFACE_HEADER_NAME = "";
+				SWIFT_PRECOMPILE_BRIDGING_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75D88AC82647CDD6001ABBFA /* Build configuration list for PBXProject "PS Mac Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D88ADB2647CDD7001ABBFA /* Debug */,
+				75D88ADC2647CDD7001ABBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75D88ADD2647CDD7001ABBFA /* Build configuration list for PBXNativeTarget "PS Mac Tools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75D88ADE2647CDD7001ABBFA /* Debug */,
+				75D88ADF2647CDD7001ABBFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75D88AC52647CDD6001ABBFA /* Project object */;
+}
