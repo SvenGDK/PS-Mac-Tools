@@ -2,7 +2,7 @@
 
 | | |
 | ------------- | ------------- |
-| ![icon_128x128](https://user-images.githubusercontent.com/84620/198197587-157922d8-abca-41e4-b4ed-a69399bae7f4.png) | The MacOS version of PS Multi Tools.</br>This app simplifies the usage of a collection of tools for Playstation 1, 2 and 3. |
+| ![icon_128x128](https://user-images.githubusercontent.com/84620/198197587-157922d8-abca-41e4-b4ed-a69399bae7f4.png) | The MacOS version of PS Multi Tools.</br>This app simplifies the usage of a collection of tools for Playstation 1, 2, 3 and Portable. |
 
 The first preview build (v0.1 - created on 01/06/2021) contains only the following PS3 tools:
 - PS3 Backup Manager with a FAT32 format tool
@@ -24,6 +24,16 @@ You can build the code in XCode or download the latest release.
 
 If you download the latest release you maybe need to add an exception when you open the app:</br>
 https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
+
+Supported consoles and future update plans:
+| Console support | Comments |
+| --- | --- |
+| `PS1` | In development - next release |
+| `PS2` | In development - next release |
+| `PS3` | Last updated on 26/06/2022 |
+| `PS4` | In development - next release |
+| `PSP` | In development - next release |
+| `PSV` | Not plannned for the moment. |
 
 PS Mac Tools uses the following tools from other developers:
 
