@@ -46,3 +46,4 @@ PS Mac Tools uses the following tools from other developers:
 | `ffplay` | FFmpeg | https://github.com/FFmpeg/FFmpeg
 | `gsplit` | GNU | https://github.com/coreutils/coreutils
 
+All tools with the exception of 'ffplay' are re-compiled for ARM64 and x86_64 and bundled to a universal MacOS binary using 'lipo'.
