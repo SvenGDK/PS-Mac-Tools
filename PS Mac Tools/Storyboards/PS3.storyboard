@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zC0-ye-sd4">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zC0-ye-sd4">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -583,7 +583,7 @@
         <!--Homebrew-->
         <scene sceneID="eVd-y2-Wve">
             <objects>
-                <viewController title="Homebrew" id="eDJ-kh-ZFm" customClass="HomebrewTableViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Homebrew" id="eDJ-kh-ZFm" customClass="HomebrewPS3ViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="zKJ-Rj-3Bc">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -788,7 +788,7 @@ Gw
         <!--PS3 Backup Manager-->
         <scene sceneID="ngA-ND-fw9">
             <objects>
-                <viewController title="PS3 Backup Manager" id="BVv-eo-PWx" customClass="BackupManagerViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PS3 Backup Manager" id="BVv-eo-PWx" customClass="BackupManager3ViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="8b1-vC-gYo">
                         <rect key="frame" x="0.0" y="0.0" width="1200" height="750"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1116,7 +1116,7 @@ Gw
         <!--MergeBIN-->
         <scene sceneID="zyd-Lt-CkY">
             <objects>
-                <viewController title="MergeBIN" id="PCh-wJ-fwW" customClass="MergeTableViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="MergeBIN" id="PCh-wJ-fwW" customClass="BINMergePS3ViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="8b4-xk-VNY">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="600"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1410,7 +1410,7 @@ You can add multiple .cue files to the list to process more games than only 1.</
                 </viewController>
                 <customObject id="C1S-q8-cMK" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="574" y="1522"/>
+            <point key="canvasLocation" x="573.5" y="1522"/>
         </scene>
         <!--PS3 Home-->
         <scene sceneID="gno-fP-qrs">
@@ -1764,9 +1764,9 @@ Gw
     <resources>
         <image name="NSExitFullScreenTemplate" width="20" height="19"/>
         <image name="NSHomeTemplate" width="24" height="20"/>
-        <image name="atom" catalog="system" width="16" height="18"/>
-        <image name="folder" catalog="system" width="23" height="17"/>
-        <image name="gearshape" catalog="system" width="20" height="20"/>
-        <image name="opticaldisc" catalog="system" width="19" height="19"/>
+        <image name="atom" catalog="system" width="17" height="18"/>
+        <image name="folder" catalog="system" width="23" height="18"/>
+        <image name="gearshape" catalog="system" width="21" height="21"/>
+        <image name="opticaldisc" catalog="system" width="20" height="20"/>
     </resources>
 </document>

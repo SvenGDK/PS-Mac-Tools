@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="kJd-SK-AtD">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="kJd-SK-AtD">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -10,7 +10,7 @@
         <scene sceneID="JSV-LD-Vuy">
             <objects>
                 <windowController id="kJd-SK-AtD" sceneMemberID="viewController">
-                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="SI3-ME-kjw">
+                    <window key="window" title="PS4 Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="SI3-ME-kjw">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="425" y="528" width="480" height="270"/>
@@ -24,25 +24,360 @@
                         </connections>
                     </window>
                     <connections>
-                        <segue destination="Lvy-dW-Cdj" kind="relationship" relationship="window.shadowedContentViewController" id="DX0-Ee-H4Y"/>
+                        <segue destination="7Ar-fD-s6i" kind="relationship" relationship="window.shadowedContentViewController" id="N0u-tb-8j2"/>
                     </connections>
                 </windowController>
                 <customObject id="vSY-bj-lqB" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="14"/>
+            <point key="canvasLocation" x="-922" y="-71"/>
+        </scene>
+        <!--PS4 Home-->
+        <scene sceneID="YfE-cM-kQo">
+            <objects>
+                <tabViewController title="PS4 Home" selectedTabViewItemIndex="0" tabStyle="toolbar" id="7Ar-fD-s6i" sceneMemberID="viewController">
+                    <tabViewItems>
+                        <tabViewItem label="Backup Manager" identifier="" image="NSFolder" id="pgf-lG-IP6"/>
+                        <tabViewItem identifier="" id="fs2-0q-P0p"/>
+                    </tabViewItems>
+                    <tabView key="tabView" type="noTabsNoBorder" id="6Kg-EJ-h6P">
+                        <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <font key="font" metaFont="message"/>
+                        <connections>
+                            <outlet property="delegate" destination="7Ar-fD-s6i" id="3IQ-89-qAE"/>
+                        </connections>
+                    </tabView>
+                    <connections>
+                        <outlet property="tabView" destination="6Kg-EJ-h6P" id="TJo-qj-B8c"/>
+                        <segue destination="lGQ-bh-9jc" kind="relationship" relationship="tabItems" id="EuG-zK-ozj"/>
+                        <segue destination="icf-iN-IVX" kind="relationship" relationship="tabItems" id="E5h-og-qaV"/>
+                    </connections>
+                </tabViewController>
+                <customObject id="fRc-RN-VrV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-922" y="488"/>
+        </scene>
+        <!--Backup Manager-->
+        <scene sceneID="FjV-Kr-m5E">
+            <objects>
+                <viewController title="Backup Manager" id="lGQ-bh-9jc" customClass="BackupManager4ViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="qwh-jQ-jG9">
+                        <rect key="frame" x="0.0" y="0.0" width="1300" height="750"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fMA-rP-sjP">
+                                <rect key="frame" x="0.0" y="0.0" width="1300" height="750"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="98m-7l-11D"/>
+                            </imageView>
+                            <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="52" horizontalPageScroll="10" verticalLineScroll="52" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZr-Bh-jfH">
+                                <rect key="frame" x="364" y="20" width="916" height="461"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <clipView key="contentView" drawsBackground="NO" id="cqD-cU-Wb7">
+                                    <rect key="frame" x="1" y="1" width="914" height="459"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" multipleSelection="NO" autosaveColumns="NO" rowHeight="52" rowSizeStyle="automatic" headerView="o2A-dv-Gir" viewBased="YES" id="IK9-Os-2KQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="914" height="431"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <size key="intercellSpacing" width="17" height="0.0"/>
+                                            <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
+                                            <tableColumns>
+                                                <tableColumn identifier="GameTitleColumn" width="319" minWidth="40" maxWidth="1000" id="qfn-va-VY2">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Game Title">
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="cld-h8-sj8">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="GameTitleTextField" id="AGz-rv-BQA">
+                                                            <rect key="frame" x="8" y="0.0" width="317" height="52"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="QRo-RT-f14">
+                                                                    <rect key="frame" x="0.0" y="18" width="317" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="fcr-KI-SOE">
+                                                                        <font key="font" usesAppearanceFont="YES"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="QRo-RT-f14" firstAttribute="centerY" secondItem="AGz-rv-BQA" secondAttribute="centerY" id="ffe-vc-YOn"/>
+                                                                <constraint firstItem="QRo-RT-f14" firstAttribute="centerX" secondItem="AGz-rv-BQA" secondAttribute="centerX" id="pga-yQ-QLg"/>
+                                                                <constraint firstItem="QRo-RT-f14" firstAttribute="leading" secondItem="AGz-rv-BQA" secondAttribute="leading" constant="2" id="uI3-wc-Mwy"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textField" destination="QRo-RT-f14" id="3VC-G9-XdQ"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                                <tableColumn identifier="GameIDColumn" width="101" minWidth="40" maxWidth="1000" id="K4M-pv-iKc">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Game ID">
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" title="Text Cell" id="TXn-gD-Hrt">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="IDTextField" id="x5w-6e-hUN">
+                                                            <rect key="frame" x="342" y="0.0" width="101" height="52"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jvU-FG-F2u">
+                                                                    <rect key="frame" x="0.0" y="18" width="101" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="hYd-uS-Ejy">
+                                                                        <font key="font" usesAppearanceFont="YES"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="jvU-FG-F2u" firstAttribute="centerY" secondItem="x5w-6e-hUN" secondAttribute="centerY" id="1Fm-Uw-DJ0"/>
+                                                                <constraint firstItem="jvU-FG-F2u" firstAttribute="centerX" secondItem="x5w-6e-hUN" secondAttribute="centerX" id="4dQ-AB-6rD"/>
+                                                                <constraint firstItem="jvU-FG-F2u" firstAttribute="leading" secondItem="x5w-6e-hUN" secondAttribute="leading" constant="2" id="vKQ-eS-soI"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textField" destination="jvU-FG-F2u" id="2be-T0-GzX"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                                <tableColumn identifier="GameVersionColumn" width="145" minWidth="10" maxWidth="3.4028234663852886e+38" id="Fcx-u7-Rhj">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Game Version">
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="0Ny-Ze-Ha9">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="GameVersionTextField" id="lR6-7s-WZ2">
+                                                            <rect key="frame" x="460" y="0.0" width="145" height="45"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pli-CY-Mp2">
+                                                                    <rect key="frame" x="0.0" y="15" width="145" height="16"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="vBk-ve-pOr">
+                                                                        <font key="font" usesAppearanceFont="YES"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <connections>
+                                                                <outlet property="textField" destination="Pli-CY-Mp2" id="oOe-yi-sCJ"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                                <tableColumn identifier="GamePathColumn" width="286" minWidth="10" maxWidth="3.4028234663852886e+38" id="QyO-gY-5AC">
+                                                    <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Path">
+                                                        <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </tableHeaderCell>
+                                                    <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="SbK-UV-Eyc">
+                                                        <font key="font" metaFont="system"/>
+                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                        <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                    </textFieldCell>
+                                                    <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
+                                                    <prototypeCellViews>
+                                                        <tableCellView identifier="GamePathTextField" id="Jgv-O3-Nh9">
+                                                            <rect key="frame" x="622" y="0.0" width="283" height="45"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <subviews>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="5di-pq-r5t">
+                                                                    <rect key="frame" x="0.0" y="15" width="283" height="16"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="2Wf-9Y-5hb">
+                                                                        <font key="font" usesAppearanceFont="YES"/>
+                                                                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="5di-pq-r5t" firstAttribute="leading" secondItem="Jgv-O3-Nh9" secondAttribute="leading" constant="2" id="875-lI-rx1"/>
+                                                                <constraint firstItem="5di-pq-r5t" firstAttribute="centerX" secondItem="Jgv-O3-Nh9" secondAttribute="centerX" id="9nx-Xf-k6Y"/>
+                                                                <constraint firstItem="5di-pq-r5t" firstAttribute="centerY" secondItem="Jgv-O3-Nh9" secondAttribute="centerY" id="qMh-hu-hhD"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="textField" destination="5di-pq-r5t" id="N3S-k5-owS"/>
+                                                            </connections>
+                                                        </tableCellView>
+                                                    </prototypeCellViews>
+                                                </tableColumn>
+                                            </tableColumns>
+                                            <connections>
+                                                <outlet property="dataSource" destination="lGQ-bh-9jc" id="jP3-3O-gko"/>
+                                                <outlet property="delegate" destination="lGQ-bh-9jc" id="Cst-io-ViR"/>
+                                            </connections>
+                                        </tableView>
+                                    </subviews>
+                                    <nil key="backgroundColor"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="VOq-9k-cKu">
+                                    <rect key="frame" x="1" y="445" width="914" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="wdU-Np-RNm">
+                                    <rect key="frame" x="224" y="17" width="15" height="102"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <tableHeaderView key="headerView" wantsLayer="YES" id="o2A-dv-Gir">
+                                    <rect key="frame" x="0.0" y="0.0" width="914" height="28"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableHeaderView>
+                            </scrollView>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tJj-Rc-wx0">
+                                <rect key="frame" x="18" y="436" width="340" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Game ID: " id="EBH-jH-rCU">
+                                    <font key="font" metaFont="systemSemibold" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="swF-4Z-Vc1">
+                                <rect key="frame" x="18" y="399" width="340" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Content ID:" id="aM8-vO-Inq">
+                                    <font key="font" metaFont="systemSemibold" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tTF-rV-eeH">
+                                <rect key="frame" x="18" y="366" width="340" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Game Version:" id="scg-cz-SeZ">
+                                    <font key="font" metaFont="systemSemibold" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Syo-jM-IAN">
+                                <rect key="frame" x="18" y="333" width="340" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Game Type:" id="e2c-Dp-2tI">
+                                    <font key="font" metaFont="systemSemibold" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xKx-LH-Bgi">
+                                <rect key="frame" x="18" y="489" width="1264" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="clipping" id="zla-H7-dKY">
+                                    <font key="font" metaFont="system" size="22"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G9v-x6-nQ6">
+                                <rect key="frame" x="18" y="120" width="340" height="205"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <textFieldCell key="cell" lineBreakMode="charWrapping" truncatesLastVisibleLine="YES" title="Description:" id="nBD-jN-Ab5">
+                                    <font key="font" metaFont="systemSemibold" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dBk-xu-41w">
+                                <rect key="frame" x="77" y="85" width="222" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <shadow key="shadow" blurRadius="1">
+                                    <size key="offset" width="2" height="2"/>
+                                    <color key="color" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </shadow>
+                                <buttonCell key="cell" type="push" title="Load Backups Folder" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="k6Z-RM-hmf">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="systemSemibold" size="13"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="LoadBackupFolder:" target="lGQ-bh-9jc" id="wGx-Ha-kxu"/>
+                                </connections>
+                            </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLY-NR-X44">
+                                <rect key="frame" x="20" y="568" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="DFf-B5-Xk8"/>
+                            </imageView>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="AppImage" destination="XLY-NR-X44" id="ph0-L2-IV4"/>
+                        <outlet property="BackgroundImage" destination="fMA-rP-sjP" id="BIo-E1-ItO"/>
+                        <outlet property="CategoryTextField" destination="Syo-jM-IAN" id="mnz-Tg-ZhP"/>
+                        <outlet property="ContentIDTextField" destination="swF-4Z-Vc1" id="3S8-jg-wy6"/>
+                        <outlet property="DescriptionTextField" destination="G9v-x6-nQ6" id="dHG-jH-mNt"/>
+                        <outlet property="GameIDTextField" destination="tJj-Rc-wx0" id="zN8-iJ-lna"/>
+                        <outlet property="GameTitleTextField" destination="xKx-LH-Bgi" id="DYd-oe-KDT"/>
+                        <outlet property="LoadBackupFolderButton" destination="dBk-xu-41w" id="xg3-95-l26"/>
+                        <outlet property="VersionTextField" destination="tTF-rV-eeH" id="vdm-yg-bM9"/>
+                        <outlet property="gamesTableView" destination="IK9-Os-2KQ" id="G69-MY-Ynm"/>
+                    </connections>
+                </viewController>
+                <customObject id="gZy-jM-qPg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="90" y="42"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="AUM-dA-e0j">
+        <scene sceneID="KJe-Nx-eFX">
             <objects>
-                <viewController id="Lvy-dW-Cdj" sceneMemberID="viewController">
-                    <view key="view" id="M4d-c8-b5J">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                <viewController id="icf-iN-IVX" sceneMemberID="viewController">
+                    <view key="view" id="5Zd-Ri-qek">
+                        <rect key="frame" x="0.0" y="0.0" width="1200" height="486"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </view>
                 </viewController>
-                <customObject id="vBp-8G-yin" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+                <customObject id="zXa-7Q-glp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-50" y="472"/>
+            <point key="canvasLocation" x="90" y="748"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSFolder" width="32" height="32"/>
+    </resources>
 </document>

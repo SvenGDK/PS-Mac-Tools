@@ -8,15 +8,16 @@
 import Cocoa
 import UniformTypeIdentifiers
 
-class MergeTableViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class BINMergePS3ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
     
     @IBOutlet weak var mergeBINTable: NSTableView!
     @IBOutlet weak var selectButton: NSButton!
     @IBOutlet weak var mergeSelectedButton: NSButton!
     @IBOutlet weak var mergeAllButton: NSButton!
+    @IBOutlet weak var te: NSTableView!
     
     var cuesInList = [String]()
-    let isotype = UTType(tag: "iso", tagClass: .filenameExtension, conformingTo: .compositeContent)!
+    let cuetype = UTType(tag: "cue", tagClass: .filenameExtension, conformingTo: .data)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,7 @@ class MergeTableViewController: NSViewController, NSTableViewDelegate, NSTableVi
         dialog.showsHiddenFiles        = false
         dialog.canChooseDirectories    = false
         dialog.allowsMultipleSelection = true
-        dialog.allowedContentTypes = [isotype]
+        dialog.allowedContentTypes = [cuetype]
 
         if (dialog.runModal() ==  NSApplication.ModalResponse.OK) {
             let results = dialog.urls

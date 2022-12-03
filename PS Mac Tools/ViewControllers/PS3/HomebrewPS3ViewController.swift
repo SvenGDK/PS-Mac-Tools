@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class HomebrewTableViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, URLSessionDelegate, URLSessionDownloadDelegate {
+class HomebrewPS3ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource, URLSessionDelegate, URLSessionDownloadDelegate {
     
     var DLUrl : URL?
     var dlSession : URLSession?
@@ -205,7 +205,6 @@ class HomebrewTableViewController: NSViewController, NSTableViewDelegate, NSTabl
             downloadProgressBar.isHidden = true
             cancelButton.isHidden = true
             downloadSelectedButton.isEnabled = true
-            
         }
     }
     

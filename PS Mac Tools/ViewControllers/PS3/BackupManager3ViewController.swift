@@ -7,7 +7,7 @@
 
 import Cocoa
 
-class BackupManagerViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
+class BackupManager3ViewController: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
     
     
     @IBOutlet weak var gameImage: NSImageView!

@@ -7,13 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		754E1020264FB028008FB2E4 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E101F264FB028008FB2E4 /* SettingsViewController.swift */; };
 		756CDF112659656900790CB9 /* CopyWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CDF102659656900790CB9 /* CopyWindowViewController.swift */; };
-		7581C41426501C1A00B558C4 /* PS2WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581C41326501C1A00B558C4 /* PS2WindowController.swift */; };
-		75961D09264E572600CC9150 /* MergeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D08264E572600CC9150 /* MergeTableViewController.swift */; };
-		75961D0B264E59EC00CC9150 /* HomebrewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D0A264E59EC00CC9150 /* HomebrewTableViewController.swift */; };
-		75BD260B265061760050DA7C /* PS3ISOToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */; };
-		75CEDC7726510CAF0096DC7D /* BackupManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDC7626510CAF0096DC7D /* BackupManagerViewController.swift */; };
 		75CEDC79265168B60096DC7D /* FormatDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */; };
 		75D88AD12647CDD6001ABBFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D88AD02647CDD6001ABBFA /* AppDelegate.swift */; };
 		75D88AD32647CDD6001ABBFA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D88AD22647CDD6001ABBFA /* MainWindowController.swift */; };
@@ -26,14 +20,43 @@
 		C24B2717290A77410041ED1B /* PS3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B2716290A77410041ED1B /* PS3.storyboard */; };
 		C24B2719290A776F0041ED1B /* PS2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B2718290A776F0041ED1B /* PS2.storyboard */; };
 		C24B271B290A778A0041ED1B /* PS1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B271A290A778A0041ED1B /* PS1.storyboard */; };
-		C2EB50E8290BABAE0010C24D /* binmerge in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50DF290BABAD0010C24D /* binmerge */; };
+		C2800E69293B73B10052F504 /* psexe2rom in Resources */ = {isa = PBXBuildFile; fileRef = C2800E68293B73B10052F504 /* psexe2rom */; };
+		C2800E6C293B8F950052F504 /* iso2opl in Resources */ = {isa = PBXBuildFile; fileRef = C2800E6B293B8F940052F504 /* iso2opl */; };
+		C28973F829168253000F3624 /* bchunk in Resources */ = {isa = PBXBuildFile; fileRef = C28973EB29168253000F3624 /* bchunk */; };
+		C28973F929168253000F3624 /* PAKerUtility in Resources */ = {isa = PBXBuildFile; fileRef = C28973EC29168253000F3624 /* PAKerUtility */; };
+		C28973FA29168253000F3624 /* patchps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C28973ED29168253000F3624 /* patchps3iso */; };
+		C28973FB29168253000F3624 /* ps3mca-ps1 in Resources */ = {isa = PBXBuildFile; fileRef = C28973EE29168253000F3624 /* ps3mca-ps1 */; };
+		C28973FC29168253000F3624 /* isoinfo in Resources */ = {isa = PBXBuildFile; fileRef = C28973EF29168253000F3624 /* isoinfo */; };
+		C28973FD29168253000F3624 /* esr_patcher in Resources */ = {isa = PBXBuildFile; fileRef = C28973F029168253000F3624 /* esr_patcher */; };
+		C28973FE29168253000F3624 /* makeps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C28973F129168253000F3624 /* makeps3iso */; };
+		C28973FF29168253000F3624 /* splitps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C28973F229168253000F3624 /* splitps3iso */; };
+		C289740029168253000F3624 /* ciso in Resources */ = {isa = PBXBuildFile; fileRef = C28973F329168253000F3624 /* ciso */; };
+		C289740129168253000F3624 /* extractps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C28973F429168253000F3624 /* extractps3iso */; };
+		C289740229168253000F3624 /* gsplit in Resources */ = {isa = PBXBuildFile; fileRef = C28973F529168253000F3624 /* gsplit */; };
+		C289740329168253000F3624 /* sfoutil in Resources */ = {isa = PBXBuildFile; fileRef = C28973F629168253000F3624 /* sfoutil */; };
+		C289740429168253000F3624 /* popstation in Resources */ = {isa = PBXBuildFile; fileRef = C28973F729168253000F3624 /* popstation */; };
+		C289740D29169748000F3624 /* PSP.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C289740C29169748000F3624 /* PSP.storyboard */; };
+		C28974102916976E000F3624 /* BackupManagerPSPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289740F2916976E000F3624 /* BackupManagerPSPViewController.swift */; };
+		C2897412291697ED000F3624 /* BINMergePS1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2897411291697ED000F3624 /* BINMergePS1ViewController.swift */; };
+		C28974142916980E000F3624 /* HomebrewPS1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28974132916980E000F3624 /* HomebrewPS1ViewController.swift */; };
+		C28974162916981A000F3624 /* BINtoISOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28974152916981A000F3624 /* BINtoISOViewController.swift */; };
+		C28974182916983B000F3624 /* ISOtoOPLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28974172916983B000F3624 /* ISOtoOPLViewController.swift */; };
+		C289741A2916984B000F3624 /* PAKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28974192916984B000F3624 /* PAKViewController.swift */; };
+		C289741C29169861000F3624 /* HomebrewPS2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289741B29169861000F3624 /* HomebrewPS2ViewController.swift */; };
+		C289741E2916986C000F3624 /* BurnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289741D2916986C000F3624 /* BurnViewController.swift */; };
+		C2897420291698A7000F3624 /* ISOtoCISOViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C289741F291698A7000F3624 /* ISOtoCISOViewController.swift */; };
+		C28974232916A1FF000F3624 /* elf2pbp in Resources */ = {isa = PBXBuildFile; fileRef = C28974212916A1FF000F3624 /* elf2pbp */; };
+		C28974242916A1FF000F3624 /* pspdecompiler in Resources */ = {isa = PBXBuildFile; fileRef = C28974222916A1FF000F3624 /* pspdecompiler */; };
+		C28974262916A231000F3624 /* ELFtoPBPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28974252916A231000F3624 /* ELFtoPBPViewController.swift */; };
+		C2C02B5B290F0B40004DE491 /* psx2psp in Resources */ = {isa = PBXBuildFile; fileRef = C2C02B58290F0B3F004DE491 /* psx2psp */; };
+		C2D93BC32916A7AA0034C311 /* binmerge in Resources */ = {isa = PBXBuildFile; fileRef = C2D93BC12916A6D50034C311 /* binmerge */; };
+		C2D93BC42916A9A10034C311 /* PS2WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581C41326501C1A00B558C4 /* PS2WindowController.swift */; };
+		C2D93BC52916A9BD0034C311 /* BackupManager3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDC7626510CAF0096DC7D /* BackupManager3ViewController.swift */; };
+		C2D93BC62916A9C50034C311 /* BINMergePS3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D08264E572600CC9150 /* BINMergePS3ViewController.swift */; };
+		C2D93BC72916A9C90034C311 /* PS3ISOToolsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */; };
+		C2D93BC82916A9D00034C311 /* HomebrewPS3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75961D0A264E59EC00CC9150 /* HomebrewPS3ViewController.swift */; };
+		C2D93BC92916A9D40034C311 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754E101F264FB028008FB2E4 /* SettingsViewController.swift */; };
 		C2EB50E9290BABAE0010C24D /* unar in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E0290BABAD0010C24D /* unar */; };
-		C2EB50EA290BABAE0010C24D /* sfoutil in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E1290BABAD0010C24D /* sfoutil */; };
-		C2EB50EB290BABAE0010C24D /* gsplit in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E2290BABAD0010C24D /* gsplit */; };
-		C2EB50EC290BABAE0010C24D /* splitps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E3290BABAD0010C24D /* splitps3iso */; };
-		C2EB50ED290BABAE0010C24D /* makeps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E4290BABAE0010C24D /* makeps3iso */; };
-		C2EB50EE290BABAE0010C24D /* patchps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E5290BABAE0010C24D /* patchps3iso */; };
-		C2EB50EF290BABAE0010C24D /* extractps3iso in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E6290BABAE0010C24D /* extractps3iso */; };
 		C2EB50F0290BABAE0010C24D /* ffplay in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E7290BABAE0010C24D /* ffplay */; };
 /* End PBXBuildFile section */
 
@@ -42,11 +65,11 @@
 		756CDF102659656900790CB9 /* CopyWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyWindowViewController.swift; sourceTree = "<group>"; };
 		7581C41326501C1A00B558C4 /* PS2WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS2WindowController.swift; sourceTree = "<group>"; };
 		758CAA5A26628250004040D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		75961D08264E572600CC9150 /* MergeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeTableViewController.swift; sourceTree = "<group>"; };
-		75961D0A264E59EC00CC9150 /* HomebrewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewTableViewController.swift; sourceTree = "<group>"; };
+		75961D08264E572600CC9150 /* BINMergePS3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BINMergePS3ViewController.swift; sourceTree = "<group>"; };
+		75961D0A264E59EC00CC9150 /* HomebrewPS3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewPS3ViewController.swift; sourceTree = "<group>"; };
 		75BB108D266169220011EEC7 /* BackgroundTasks.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BackgroundTasks.framework; path = System/Library/Frameworks/BackgroundTasks.framework; sourceTree = SDKROOT; };
 		75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS3ISOToolsViewController.swift; sourceTree = "<group>"; };
-		75CEDC7626510CAF0096DC7D /* BackupManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManagerViewController.swift; sourceTree = "<group>"; };
+		75CEDC7626510CAF0096DC7D /* BackupManager3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager3ViewController.swift; sourceTree = "<group>"; };
 		75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatDriveViewController.swift; sourceTree = "<group>"; };
 		75D88ACD2647CDD6001ABBFA /* PS Mac Tools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PS Mac Tools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75D88AD02647CDD6001ABBFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,14 +85,37 @@
 		C24B2716290A77410041ED1B /* PS3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS3.storyboard; sourceTree = "<group>"; };
 		C24B2718290A776F0041ED1B /* PS2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS2.storyboard; sourceTree = "<group>"; };
 		C24B271A290A778A0041ED1B /* PS1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS1.storyboard; sourceTree = "<group>"; };
-		C2EB50DF290BABAD0010C24D /* binmerge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = binmerge; sourceTree = "<group>"; };
+		C2800E68293B73B10052F504 /* psexe2rom */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = psexe2rom; sourceTree = "<group>"; };
+		C2800E6B293B8F940052F504 /* iso2opl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = iso2opl; sourceTree = "<group>"; };
+		C28973EB29168253000F3624 /* bchunk */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bchunk; sourceTree = "<group>"; };
+		C28973EC29168253000F3624 /* PAKerUtility */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = PAKerUtility; sourceTree = "<group>"; };
+		C28973ED29168253000F3624 /* patchps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = patchps3iso; sourceTree = "<group>"; };
+		C28973EE29168253000F3624 /* ps3mca-ps1 */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = "ps3mca-ps1"; sourceTree = "<group>"; };
+		C28973EF29168253000F3624 /* isoinfo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = isoinfo; sourceTree = "<group>"; };
+		C28973F029168253000F3624 /* esr_patcher */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = esr_patcher; sourceTree = "<group>"; };
+		C28973F129168253000F3624 /* makeps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = makeps3iso; sourceTree = "<group>"; };
+		C28973F229168253000F3624 /* splitps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = splitps3iso; sourceTree = "<group>"; };
+		C28973F329168253000F3624 /* ciso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ciso; sourceTree = "<group>"; };
+		C28973F429168253000F3624 /* extractps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = extractps3iso; sourceTree = "<group>"; };
+		C28973F529168253000F3624 /* gsplit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = gsplit; sourceTree = "<group>"; };
+		C28973F629168253000F3624 /* sfoutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sfoutil; sourceTree = "<group>"; };
+		C28973F729168253000F3624 /* popstation */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = popstation; sourceTree = "<group>"; };
+		C289740C29169748000F3624 /* PSP.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PSP.storyboard; sourceTree = "<group>"; };
+		C289740F2916976E000F3624 /* BackupManagerPSPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManagerPSPViewController.swift; sourceTree = "<group>"; };
+		C2897411291697ED000F3624 /* BINMergePS1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BINMergePS1ViewController.swift; sourceTree = "<group>"; };
+		C28974132916980E000F3624 /* HomebrewPS1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewPS1ViewController.swift; sourceTree = "<group>"; };
+		C28974152916981A000F3624 /* BINtoISOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BINtoISOViewController.swift; sourceTree = "<group>"; };
+		C28974172916983B000F3624 /* ISOtoOPLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISOtoOPLViewController.swift; sourceTree = "<group>"; };
+		C28974192916984B000F3624 /* PAKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PAKViewController.swift; sourceTree = "<group>"; };
+		C289741B29169861000F3624 /* HomebrewPS2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomebrewPS2ViewController.swift; sourceTree = "<group>"; };
+		C289741D2916986C000F3624 /* BurnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BurnViewController.swift; sourceTree = "<group>"; };
+		C289741F291698A7000F3624 /* ISOtoCISOViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ISOtoCISOViewController.swift; sourceTree = "<group>"; };
+		C28974212916A1FF000F3624 /* elf2pbp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = elf2pbp; sourceTree = "<group>"; };
+		C28974222916A1FF000F3624 /* pspdecompiler */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pspdecompiler; sourceTree = "<group>"; };
+		C28974252916A231000F3624 /* ELFtoPBPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFtoPBPViewController.swift; sourceTree = "<group>"; };
+		C2C02B58290F0B3F004DE491 /* psx2psp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = psx2psp; sourceTree = "<group>"; };
+		C2D93BC12916A6D50034C311 /* binmerge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = binmerge; path = ../../Tools/binmerge; sourceTree = "<group>"; };
 		C2EB50E0290BABAD0010C24D /* unar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = unar; sourceTree = "<group>"; };
-		C2EB50E1290BABAD0010C24D /* sfoutil */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = sfoutil; sourceTree = "<group>"; };
-		C2EB50E2290BABAD0010C24D /* gsplit */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = gsplit; sourceTree = "<group>"; };
-		C2EB50E3290BABAD0010C24D /* splitps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = splitps3iso; sourceTree = "<group>"; };
-		C2EB50E4290BABAE0010C24D /* makeps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = makeps3iso; sourceTree = "<group>"; };
-		C2EB50E5290BABAE0010C24D /* patchps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = patchps3iso; sourceTree = "<group>"; };
-		C2EB50E6290BABAE0010C24D /* extractps3iso */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = extractps3iso; sourceTree = "<group>"; };
 		C2EB50E7290BABAE0010C24D /* ffplay */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffplay; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,19 +159,31 @@
 		75D88ACF2647CDD6001ABBFA /* PS Mac Tools */ = {
 			isa = PBXGroup;
 			children = (
-				C2EB50DF290BABAD0010C24D /* binmerge */,
-				C2EB50E6290BABAE0010C24D /* extractps3iso */,
+				C2800E6B293B8F940052F504 /* iso2opl */,
+				C2800E68293B73B10052F504 /* psexe2rom */,
+				C2D93BC12916A6D50034C311 /* binmerge */,
+				C28974212916A1FF000F3624 /* elf2pbp */,
+				C28974222916A1FF000F3624 /* pspdecompiler */,
+				C28973EB29168253000F3624 /* bchunk */,
+				C28973F329168253000F3624 /* ciso */,
+				C28973F029168253000F3624 /* esr_patcher */,
+				C28973F429168253000F3624 /* extractps3iso */,
+				C28973F529168253000F3624 /* gsplit */,
+				C28973EF29168253000F3624 /* isoinfo */,
+				C28973F129168253000F3624 /* makeps3iso */,
+				C28973EC29168253000F3624 /* PAKerUtility */,
+				C28973ED29168253000F3624 /* patchps3iso */,
+				C28973F729168253000F3624 /* popstation */,
+				C28973EE29168253000F3624 /* ps3mca-ps1 */,
+				C28973F629168253000F3624 /* sfoutil */,
+				C28973F229168253000F3624 /* splitps3iso */,
+				C2C02B58290F0B3F004DE491 /* psx2psp */,
 				C2EB50E7290BABAE0010C24D /* ffplay */,
-				C2EB50E2290BABAD0010C24D /* gsplit */,
-				C2EB50E4290BABAE0010C24D /* makeps3iso */,
-				C2EB50E5290BABAE0010C24D /* patchps3iso */,
-				C2EB50E1290BABAD0010C24D /* sfoutil */,
-				C2EB50E3290BABAD0010C24D /* splitps3iso */,
 				C2EB50E0290BABAD0010C24D /* unar */,
+				C289740729168421000F3624 /* WindowControllers */,
 				C24B271D290A77C60041ED1B /* ViewControllers */,
 				C24B271C290A779E0041ED1B /* Storyboards */,
 				75D88AD02647CDD6001ABBFA /* AppDelegate.swift */,
-				75D88AD22647CDD6001ABBFA /* MainWindowController.swift */,
 				75D88AD42647CDD7001ABBFA /* Assets.xcassets */,
 				75D88AD92647CDD7001ABBFA /* Info.plist */,
 				75D88ADA2647CDD7001ABBFA /* PS_Mac_Tools.entitlements */,
@@ -141,6 +199,7 @@
 				C24B2716290A77410041ED1B /* PS3.storyboard */,
 				C24B2718290A776F0041ED1B /* PS2.storyboard */,
 				C24B271A290A778A0041ED1B /* PS1.storyboard */,
+				C289740C29169748000F3624 /* PSP.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -148,19 +207,77 @@
 		C24B271D290A77C60041ED1B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				7581C41326501C1A00B558C4 /* PS2WindowController.swift */,
-				75961D08264E572600CC9150 /* MergeTableViewController.swift */,
-				75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */,
-				75961D0A264E59EC00CC9150 /* HomebrewTableViewController.swift */,
-				754E101F264FB028008FB2E4 /* SettingsViewController.swift */,
-				75CEDC7626510CAF0096DC7D /* BackupManagerViewController.swift */,
-				75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */,
-				756CDF102659656900790CB9 /* CopyWindowViewController.swift */,
-				C24B270E290A68650041ED1B /* BackupManager4ViewController.swift */,
-				C24B2710290A6A9C0041ED1B /* BackupManager2ViewController.swift */,
-				C24B2712290A6AAE0041ED1B /* BackupManager1ViewController.swift */,
+				C289740E29169753000F3624 /* PSP */,
+				C289740B291685C2000F3624 /* PS4 */,
+				C289740A291685BD000F3624 /* PS3 */,
+				C2897409291685B8000F3624 /* PS2 */,
+				C2897408291685AE000F3624 /* PS1 */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		C289740729168421000F3624 /* WindowControllers */ = {
+			isa = PBXGroup;
+			children = (
+				7581C41326501C1A00B558C4 /* PS2WindowController.swift */,
+				75D88AD22647CDD6001ABBFA /* MainWindowController.swift */,
+			);
+			path = WindowControllers;
+			sourceTree = "<group>";
+		};
+		C2897408291685AE000F3624 /* PS1 */ = {
+			isa = PBXGroup;
+			children = (
+				C24B2712290A6AAE0041ED1B /* BackupManager1ViewController.swift */,
+				C2897411291697ED000F3624 /* BINMergePS1ViewController.swift */,
+				C28974132916980E000F3624 /* HomebrewPS1ViewController.swift */,
+				C28974152916981A000F3624 /* BINtoISOViewController.swift */,
+			);
+			path = PS1;
+			sourceTree = "<group>";
+		};
+		C2897409291685B8000F3624 /* PS2 */ = {
+			isa = PBXGroup;
+			children = (
+				C24B2710290A6A9C0041ED1B /* BackupManager2ViewController.swift */,
+				C28974172916983B000F3624 /* ISOtoOPLViewController.swift */,
+				C28974192916984B000F3624 /* PAKViewController.swift */,
+				C289741B29169861000F3624 /* HomebrewPS2ViewController.swift */,
+				C289741D2916986C000F3624 /* BurnViewController.swift */,
+			);
+			path = PS2;
+			sourceTree = "<group>";
+		};
+		C289740A291685BD000F3624 /* PS3 */ = {
+			isa = PBXGroup;
+			children = (
+				75CEDC7626510CAF0096DC7D /* BackupManager3ViewController.swift */,
+				75961D08264E572600CC9150 /* BINMergePS3ViewController.swift */,
+				75BD260A265061760050DA7C /* PS3ISOToolsViewController.swift */,
+				75961D0A264E59EC00CC9150 /* HomebrewPS3ViewController.swift */,
+				754E101F264FB028008FB2E4 /* SettingsViewController.swift */,
+				75CEDC78265168B60096DC7D /* FormatDriveViewController.swift */,
+				756CDF102659656900790CB9 /* CopyWindowViewController.swift */,
+			);
+			path = PS3;
+			sourceTree = "<group>";
+		};
+		C289740B291685C2000F3624 /* PS4 */ = {
+			isa = PBXGroup;
+			children = (
+				C24B270E290A68650041ED1B /* BackupManager4ViewController.swift */,
+			);
+			path = PS4;
+			sourceTree = "<group>";
+		};
+		C289740E29169753000F3624 /* PSP */ = {
+			isa = PBXGroup;
+			children = (
+				C289740F2916976E000F3624 /* BackupManagerPSPViewController.swift */,
+				C289741F291698A7000F3624 /* ISOtoCISOViewController.swift */,
+				C28974252916A231000F3624 /* ELFtoPBPViewController.swift */,
+			);
+			path = PSP;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,21 +342,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2EB50EC290BABAE0010C24D /* splitps3iso in Resources */,
-				C2EB50EA290BABAE0010C24D /* sfoutil in Resources */,
+				C2D93BC32916A7AA0034C311 /* binmerge in Resources */,
 				C24B2715290A6CBF0041ED1B /* PS4.storyboard in Resources */,
 				75D88AD52647CDD7001ABBFA /* Assets.xcassets in Resources */,
+				C28973FF29168253000F3624 /* splitps3iso in Resources */,
 				C2EB50E9290BABAE0010C24D /* unar in Resources */,
 				C24B271B290A778A0041ED1B /* PS1.storyboard in Resources */,
-				C2EB50EB290BABAE0010C24D /* gsplit in Resources */,
-				C2EB50E8290BABAE0010C24D /* binmerge in Resources */,
+				C289740429168253000F3624 /* popstation in Resources */,
+				C28973FE29168253000F3624 /* makeps3iso in Resources */,
+				C28973FB29168253000F3624 /* ps3mca-ps1 in Resources */,
+				C2C02B5B290F0B40004DE491 /* psx2psp in Resources */,
+				C289740129168253000F3624 /* extractps3iso in Resources */,
 				C24B2719290A776F0041ED1B /* PS2.storyboard in Resources */,
-				C2EB50EF290BABAE0010C24D /* extractps3iso in Resources */,
 				C2EB50F0290BABAE0010C24D /* ffplay in Resources */,
-				C2EB50ED290BABAE0010C24D /* makeps3iso in Resources */,
+				C28973FC29168253000F3624 /* isoinfo in Resources */,
 				75D88AD82647CDD7001ABBFA /* Main.storyboard in Resources */,
+				C2800E6C293B8F950052F504 /* iso2opl in Resources */,
+				C28973FD29168253000F3624 /* esr_patcher in Resources */,
+				C28973F829168253000F3624 /* bchunk in Resources */,
 				C24B2717290A77410041ED1B /* PS3.storyboard in Resources */,
-				C2EB50EE290BABAE0010C24D /* patchps3iso in Resources */,
+				C28974242916A1FF000F3624 /* pspdecompiler in Resources */,
+				C289740D29169748000F3624 /* PSP.storyboard in Resources */,
+				C28974232916A1FF000F3624 /* elf2pbp in Resources */,
+				C28973F929168253000F3624 /* PAKerUtility in Resources */,
+				C28973FA29168253000F3624 /* patchps3iso in Resources */,
+				C2800E69293B73B10052F504 /* psexe2rom in Resources */,
+				C289740329168253000F3624 /* sfoutil in Resources */,
+				C289740029168253000F3624 /* ciso in Resources */,
+				C289740229168253000F3624 /* gsplit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,19 +380,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75961D0B264E59EC00CC9150 /* HomebrewTableViewController.swift in Sources */,
+				C2D93BC72916A9C90034C311 /* PS3ISOToolsViewController.swift in Sources */,
 				756CDF112659656900790CB9 /* CopyWindowViewController.swift in Sources */,
 				C24B270F290A68650041ED1B /* BackupManager4ViewController.swift in Sources */,
 				C24B2713290A6AAE0041ED1B /* BackupManager1ViewController.swift in Sources */,
+				C2D93BC82916A9D00034C311 /* HomebrewPS3ViewController.swift in Sources */,
+				C289741A2916984B000F3624 /* PAKViewController.swift in Sources */,
+				C2D93BC62916A9C50034C311 /* BINMergePS3ViewController.swift in Sources */,
+				C28974162916981A000F3624 /* BINtoISOViewController.swift in Sources */,
 				C24B2711290A6A9C0041ED1B /* BackupManager2ViewController.swift in Sources */,
+				C2D93BC42916A9A10034C311 /* PS2WindowController.swift in Sources */,
 				75D88AD32647CDD6001ABBFA /* MainWindowController.swift in Sources */,
+				C289741E2916986C000F3624 /* BurnViewController.swift in Sources */,
 				75D88AD12647CDD6001ABBFA /* AppDelegate.swift in Sources */,
-				75BD260B265061760050DA7C /* PS3ISOToolsViewController.swift in Sources */,
-				75CEDC7726510CAF0096DC7D /* BackupManagerViewController.swift in Sources */,
-				7581C41426501C1A00B558C4 /* PS2WindowController.swift in Sources */,
+				C28974182916983B000F3624 /* ISOtoOPLViewController.swift in Sources */,
+				C2897412291697ED000F3624 /* BINMergePS1ViewController.swift in Sources */,
+				C2D93BC92916A9D40034C311 /* SettingsViewController.swift in Sources */,
+				C28974102916976E000F3624 /* BackupManagerPSPViewController.swift in Sources */,
+				C2D93BC52916A9BD0034C311 /* BackupManager3ViewController.swift in Sources */,
 				75CEDC79265168B60096DC7D /* FormatDriveViewController.swift in Sources */,
-				754E1020264FB028008FB2E4 /* SettingsViewController.swift in Sources */,
-				75961D09264E572600CC9150 /* MergeTableViewController.swift in Sources */,
+				C28974142916980E000F3624 /* HomebrewPS1ViewController.swift in Sources */,
+				C289741C29169861000F3624 /* HomebrewPS2ViewController.swift in Sources */,
+				C2897420291698A7000F3624 /* ISOtoCISOViewController.swift in Sources */,
+				C28974262916A231000F3624 /* ELFtoPBPViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +558,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "SvenGDK.PS-Mac-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -450,7 +590,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "SvenGDK.PS-Mac-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;

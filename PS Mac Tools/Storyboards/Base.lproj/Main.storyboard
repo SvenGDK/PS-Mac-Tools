@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21225"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,21 +15,21 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nPn-7r-7Kl">
-                                <rect key="frame" x="194" y="251" width="770" height="329"/>
+                                <rect key="frame" x="18" y="251" width="1123" height="329"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" selectable="YES" alignment="center" id="xH9-QO-Esa">
-                                    <font key="font" metaFont="system"/>
-                                    <string key="title">     Welcome to PS Mac Tools v0.1 - The first official Mac Release of PS Multi Tools.
+                                    <font key="font" metaFont="system" size="15"/>
+                                    <mutableString key="title">    Welcome to PS Mac Tools v1 BETA
 
-This app contains the most used tools and homebrews for PS3, PS2 and PS1.    You can open the PS3, PS2* or PS1* Toolset from the app menu or by clicking on the console icon.    Thanks for using PS Multi Tools! - Already over 10 years with you :)   *v0.1 contains ONLY PS3 Tools</string>
+This app contains the most used tools and homebrews for PS4, PS3, PS2, PS1 &amp; PSP. This is a BETA RELEASE and can contain bugs.   You can open the PS4, PS3, PS2, PS1 or PSP Toolset from the app menu or by clicking on the console icon. </mutableString>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KdN-Xy-ICt">
-                                <rect key="frame" x="52" y="79" width="256" height="128"/>
+                                <rect key="frame" x="82" y="79" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" title="PS1" bezelStyle="shadowlessSquare" image="PS1" imagePosition="above" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="Gvl-wJ-tDF">
+                                <buttonCell key="cell" type="square" title="PS1" bezelStyle="shadowlessSquare" image="PS1" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Gvl-wJ-tDF">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -39,9 +39,9 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w3u-je-aFP">
-                                <rect key="frame" x="318" y="79" width="256" height="128"/>
+                                <rect key="frame" x="291" y="79" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" title="PS2" bezelStyle="shadowlessSquare" image="PS2" imagePosition="above" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="Qs9-GC-XOu">
+                                <buttonCell key="cell" type="square" title="PS2" bezelStyle="shadowlessSquare" image="PS2" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Qs9-GC-XOu">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -51,7 +51,7 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RfK-mS-dQd">
-                                <rect key="frame" x="584" y="79" width="256" height="128"/>
+                                <rect key="frame" x="515" y="79" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="square" title="PS3" bezelStyle="shadowlessSquare" image="PS3" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="hsb-Wm-ILe">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -63,9 +63,9 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                                 </connections>
                             </button>
                             <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gyr-mY-ma2">
-                                <rect key="frame" x="850" y="79" width="256" height="128"/>
+                                <rect key="frame" x="732" y="79" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <buttonCell key="cell" type="square" title="PS4" bezelStyle="shadowlessSquare" image="PS4" imagePosition="above" alignment="center" enabled="NO" imageScaling="proportionallyUpOrDown" inset="2" id="feM-Ec-vsf">
+                                <buttonCell key="cell" type="square" title="PS4" bezelStyle="shadowlessSquare" image="PS4" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="feM-Ec-vsf">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
@@ -74,12 +74,24 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                                     <segue destination="h5w-vD-AdX" kind="show" id="VJU-M5-YEe"/>
                                 </connections>
                             </button>
+                            <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oAQ-6V-wHe">
+                                <rect key="frame" x="952" y="79" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="square" title="PSP" bezelStyle="shadowlessSquare" image="PSP" imagePosition="above" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Via-HG-cmk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <color key="contentTintColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                <connections>
+                                    <segue destination="hKT-kp-thl" kind="show" id="IPh-mp-Uhn"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                 </viewController>
                 <customObject id="8a0-iV-PKN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2488" y="209"/>
+            <point key="canvasLocation" x="-2488.5" y="209"/>
         </scene>
         <!--Application-->
         <scene sceneID="JPo-4y-FX3">
@@ -135,7 +147,7 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Toolset" id="bib-Uj-vzu">
                                     <items>
-                                        <menuItem title="PS4" enabled="NO" id="2YV-R5-mTF">
+                                        <menuItem title="PS4" id="2YV-R5-mTF">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <segue destination="h5w-vD-AdX" kind="show" id="hd1-tK-xVO"/>
@@ -148,18 +160,24 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                                                 <segue destination="O82-RK-zma" kind="show" id="U1E-Or-MLE"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="PS2" enabled="NO" id="IAo-SY-fd9">
+                                        <menuItem title="PS2" id="IAo-SY-fd9">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="changeToPS2Set:" target="Voe-Tx-rLC" id="JvS-jr-ynu"/>
                                                 <segue destination="bIB-hm-Dhp" kind="show" id="KHY-S1-ccz"/>
                                             </connections>
                                         </menuItem>
-                                        <menuItem title="PS1" enabled="NO" id="tXI-mr-wws">
+                                        <menuItem title="PS1" id="tXI-mr-wws">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="changeToPS1Set:" target="Voe-Tx-rLC" id="son-JK-477"/>
                                                 <segue destination="5at-44-Mge" kind="show" id="LIO-pj-ilY"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="PSP" id="Ph3-4c-u7X">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <segue destination="hKT-kp-thl" kind="show" id="DIe-BR-yDX"/>
                                             </connections>
                                         </menuItem>
                                     </items>
@@ -175,13 +193,13 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2151" y="-900"/>
+            <point key="canvasLocation" x="-1771" y="-913"/>
         </scene>
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" customClass="MainWindowController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="PS Mac Tools v0.1" subtitle="Home" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="PS Mac Tools" subtitle="Home" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <rect key="contentRect" x="62" y="240" width="1000" height="600"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="2560" height="1415"/>
@@ -206,7 +224,7 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                 <controllerPlaceholder storyboardName="PS1" id="5at-44-Mge" sceneMemberID="viewController"/>
                 <customObject id="LjF-Ew-Gk7" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1691" y="-2"/>
+            <point key="canvasLocation" x="-1686" y="-5"/>
         </scene>
         <!--PS2-->
         <scene sceneID="ai1-Iz-c3a">
@@ -214,7 +232,7 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                 <controllerPlaceholder storyboardName="PS2" id="bIB-hm-Dhp" sceneMemberID="viewController"/>
                 <customObject id="NXb-tR-Sks" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1684" y="54"/>
+            <point key="canvasLocation" x="-1686" y="52"/>
         </scene>
         <!--PS3-->
         <scene sceneID="lor-jA-IGA">
@@ -222,7 +240,7 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                 <controllerPlaceholder storyboardName="PS3" id="O82-RK-zma" sceneMemberID="viewController"/>
                 <customObject id="fPm-gm-qDr" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1684" y="127"/>
+            <point key="canvasLocation" x="-1687" y="125"/>
         </scene>
         <!--PS4-->
         <scene sceneID="20x-mv-0TZ">
@@ -230,10 +248,19 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
                 <controllerPlaceholder storyboardName="PS4" id="h5w-vD-AdX" sceneMemberID="viewController"/>
                 <customObject id="HI3-r8-uEL" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1697" y="203"/>
+            <point key="canvasLocation" x="-1687" y="199"/>
+        </scene>
+        <!--PSP-->
+        <scene sceneID="KrM-Zs-Bnz">
+            <objects>
+                <controllerPlaceholder storyboardName="PSP" id="hKT-kp-thl" sceneMemberID="viewController"/>
+                <customObject id="9wQ-0E-2e4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1687" y="283"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="IPh-mp-Uhn"/>
         <segue reference="VJU-M5-YEe"/>
         <segue reference="kCh-Rq-haO"/>
         <segue reference="2Hc-ST-N6g"/>
@@ -244,5 +271,6 @@ This app contains the most used tools and homebrews for PS3, PS2 and PS1.  �
         <image name="PS2" width="256" height="256"/>
         <image name="PS3" width="256" height="256"/>
         <image name="PS4" width="512" height="512"/>
+        <image name="PSP" width="128" height="128"/>
     </resources>
 </document>

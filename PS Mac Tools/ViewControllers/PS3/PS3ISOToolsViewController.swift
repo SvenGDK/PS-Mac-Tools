@@ -31,7 +31,7 @@ class PS3ISOToolsViewController: NSViewController {
     @IBOutlet weak var patchComboBox: NSPopUpButton!
     @IBOutlet weak var patchButton: NSButton!
     
-    let isotype = UTType(tag: "iso", tagClass: .filenameExtension, conformingTo: .compositeContent)!
+    let isotype = UTType(tag: "iso", tagClass: .filenameExtension, conformingTo: .diskImage)!
     
     override func viewWillAppear() {
         super.viewWillAppear()
