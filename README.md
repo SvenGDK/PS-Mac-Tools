@@ -40,9 +40,9 @@ PSP
 
 | Update status | Last updated on |
 | --- | --- |
-| `Tools` | 01/06/2021 |
-| `Homebrew urls` | 26/06/2022 |
-| `Bugfixes or code updates` | 26/06/2022 |
+| `Tools` | 03/12/2022 |
+| `Homebrew urls` | 03/12/2022 |
+| `Bugfixes or code updates` | 03/12/2022 |
 
 Runs on MacOS Monterey or higher.</br>
 You can build the code in XCode or download the latest release.
