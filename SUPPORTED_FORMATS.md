@@ -1,23 +1,29 @@
 PS1:
 | Format | Supported workflows |
 | --- | --- |
-| `.bin` | Read & write |
-| `.iso` | Read, write & (replace - not used in v1) |
+| `.bin` | Read & Write |
+| `.iso` | Read |
 
 PS2:
 | Format | Supported workflows |
 | --- | --- |
-| `.iso` | Read, (write & replace - not used in v1) |
+| `.iso` | Read |
 
 PS3:
 | Format | Supported workflows |
 | --- | --- |
-| `.iso` | Read, write & (replace - not used in v1) |
-| `.sfo` | Read, (write & replace - not used in v1) |
-| `PS3_GAME` | Read, (write & replace - not used in v1) |
+| `.iso` | Read, Create |
+| `.sfo` | Read |
+| `PS3_GAME` | Read |
 
 PS4:
 | Format | Supported workflows |
 | --- | --- |
 | `.pkg` | Read |
-| `.sfo` | Read, (write & replace - not used in v1) |
+| `.sfo` | Read |
+
+PS5:
+| Format | Supported workflows |
+| --- | --- |
+| `.pkg` | Read inner param.json |
+| `.json` | Create, Read & Write |
