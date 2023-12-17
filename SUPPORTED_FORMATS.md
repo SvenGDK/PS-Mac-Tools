@@ -25,5 +25,5 @@ PS4:
 PS5:
 | Format | Supported workflows |
 | --- | --- |
-| `.pkg` | Read inner param.json |
+| `.pkg` | Read inner param.json - Not ready yet in macOS. |
 | `.json` | Create, Read & Write |
