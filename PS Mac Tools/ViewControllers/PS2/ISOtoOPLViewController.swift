@@ -157,7 +157,7 @@ class ISOtoOPLViewController: NSViewController, WKNavigationDelegate, NSComboBox
         {
             let ISOReaderOutput = runISOParser(fileInput: inputISOFile.stringValue).output
             
-            var ISOGameID = ISOReaderOutput.filter({(item: String) -> Bool in
+            let ISOGameID = ISOReaderOutput.filter({(item: String) -> Bool in
                 let stringMatch = item.lowercased().range(of: "BOOT2 = ".lowercased())
                 let stringMatch2 = item.lowercased().range(of: "BOOT2=".lowercased())
                 if stringMatch == nil {
@@ -188,7 +188,7 @@ class ISOtoOPLViewController: NSViewController, WKNavigationDelegate, NSComboBox
             let ISOReaderOutput = runISOParser(fileInput: inputISOFile.stringValue).output
             var GameIDfromCNF: String = ""
             
-            var ISOGameID = ISOReaderOutput.filter({(item: String) -> Bool in
+            let ISOGameID = ISOReaderOutput.filter({(item: String) -> Bool in
                 let stringMatch = item.lowercased().range(of: "BOOT2 = ".lowercased())
                 let stringMatch2 = item.lowercased().range(of: "BOOT2=".lowercased())
                 if stringMatch == nil {

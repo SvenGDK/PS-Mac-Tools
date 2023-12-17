@@ -79,19 +79,22 @@ class HomebrewPS3ViewController: NSViewController, NSTableViewDelegate, NSTableV
     
     let homebrewList = [
         ["headerInfo":"Homebrew"],
-      ["summaryInfo":"WebMAN MOD","detailInfo":"webMAN MOD is a homebrew plugin for PlayStation®3 forked from the original webMAN/sMAN by DeanK with many features added.\nThe application provides extended services for PS3 console like web server, ftp server, file manager, netiso, ntfs, gamepad emulation, ps3mapi, tasks automation, memory debugger and more. Version: 1.47.42","imageIcon":"WebMAN"],
+        ["summaryInfo":"WebMAN MOD","detailInfo":"webMAN MOD is a homebrew plugin for PlayStation®3 forked from the original webMAN/sMAN by DeanK with many features added.\nThe application provides extended services for PS3 console like web server, ftp server, file manager, netiso, ntfs, gamepad emulation, ps3mapi, tasks automation, memory debugger and more. Version: 1.47.42","imageIcon":"WebMAN"],
         
-      ["summaryInfo":"IrisMAN","detailInfo":"Iris Manager fork including latest mamba from NzV.\nCurrent Version: 4.89","imageIcon":"IrisMAN"],
+        ["summaryInfo":"IrisMAN","detailInfo":"Iris Manager fork including latest mamba from NzV.\nCurrent Version: 4.89","imageIcon":"IrisMAN"],
         
-      ["summaryInfo":"IDPSet","detailInfo":"IDPSet is a tool to make CEX and DEX dump and you can permanently change your console IDPS (NAND and NOR) and change the PSID too. You just have to run IDPSet on your CFW (with eid_root_key and valid idps.bin on the root of your USB key).","imageIcon":"IDPSet"],
+
+        ["summaryInfo":"IDPSet","detailInfo":"IDPSet is a tool to make CEX and DEX dump and you can permanently change your console IDPS (NAND and NOR) and change the PSID too. You just have to run IDPSet on your CFW (with eid_root_key and valid idps.bin on the root of your USB key).","imageIcon":"IDPSet"],
       
         
         ["headerInfo":"Emulators for PS3"],
-      ["summaryInfo":"RetroArch","detailInfo":"RetroArch is a modular multi-system emulator system that is designed to be fast, lightweight, and portable. It has features few other emulators frontends have, such as real-time rewinding and game-aware shading.","imageIcon":"RetroArch"],
+
+        ["summaryInfo":"RetroArch","detailInfo":"RetroArch is a modular multi-system emulator system that is designed to be fast, lightweight, and portable. It has features few other emulators frontends have, such as real-time rewinding and game-aware shading.","imageIcon":"RetroArch"],
    
         
         ["headerInfo":"Firmwares"],
-      ["summaryInfo":"Latest Official","detailInfo":"The latest official PS3 Firmware. Developed by Sony - a fork of both FreeBSD and NetBSD called CellOS. It uses XrossMediaBar (XMB) as its graphical shell.","imageIcon":"OFW"],
+    
+        ["summaryInfo":"Latest Official","detailInfo":"The latest official PS3 Firmware. Developed by Sony - a fork of both FreeBSD and NetBSD called CellOS. It uses XrossMediaBar (XMB) as its graphical shell.","imageIcon":"OFW"],
         ["summaryInfo":"4.87.2 Evilnat","detailInfo":"REMOVED.","imageIcon":"Evilnat"]
       
       ]

@@ -1,65 +1,59 @@
 # PS Mac Tools
 
-| | |
-| ------------- | ------------- |
-| ![icon_128x128](https://user-images.githubusercontent.com/84620/198197587-157922d8-abca-41e4-b4ed-a69399bae7f4.png) | The MacOS version of PS Multi Tools.</br>This app simplifies the usage of a collection of tools for Playstation 1, 2, 3, 4 and Portable. |
+<p align="center"><img src="https://github.com/SvenGDK/PS-Multi-Tools/assets/84620/5f1e04c6-9d72-429c-85a5-b7090864c6e9" width="128" height="128"> </br>
+The macOS version of PS Multi Tools.</br>Contains tools & backup manager for PS1, PS2, PS3, PS4, PS5 & PSP.</p>
 
-The first beta of v1 contains the following tools:
-
-PS1
-- Backup Manager (Read only atm)
+<details>
+  <summary>v1.5 contains following tools</summary>
+  
+#### PS1
+- Backup Manager (Read games only)
 - Convert .bin/.cue files to a single .iso file
 - Merge multiple .bin files into a single one
-- Homebrew Downloader
+- Homebrew Downloads
 
-PS2
-
-- Backup Manager (Read only atm)
-- Burn your .iso files with the correct settings (not implemented yet)
-- Convert to .iso game to an OPL compatible game and copy to an external drive
+#### PS2
+- Backup Manager (Read games only)
+- Burn .iso files to CD/DVD discs
+- Convert an .iso game to an OPL compatible game and copy to an external drive
 - Pack and Extract PAK files (not implemented yet)
-- Homebrew Downloader
+- Homebrew Downloads
 
-PS3
-- PS3 Backup Manager with a FAT32 format tool
-- PS3 Homebrew Downloader
+#### PS3
+- Backup Manager with a FAT32 format tool
+- Homebrew Downloads
 - Make PS3 ISOs
 - Extract PS3 ISOs with option to split into 4GB files
 - Split or merge PS3 ISOs
 - Patching PS3 ISOs
 - PS1 .BIN Merge (Merges multiple .bin files into a single one)
 
-PS4
-- Backup Manager (Read only atm)
+#### PS4
+- Backup Manager (Read games only)
 
-PSP
-- Backup Manager (Read only atm)
+#### PS5
+- Backup Manager for Games & Apps
+- Payload Sender (ELF, BIN & JAR -> requires jdk11)
+- FTP Browser
+- FTP Grabber/Dumper
+- PKG Merger
+- Param & Manifest JSON Editor
+- Blu Ray disc burner
+- Downloads & other useful resources
+
+#### PSP
+- Backup Manager (Read games only)
 - Convert .iso files to .cso
 - Convert .ELF to .PBP
-- Homebrew Downloader (not implemented yet)
+- Homebrew Downloads (not implemented yet)
 
-| Update status | Last updated on |
-| --- | --- |
-| `Tools` | 03/12/2022 |
-| `Homebrew urls` | 03/12/2022 |
-| `Bugfixes or code updates` | 03/12/2022 |
+</details>
 
-Runs on MacOS Monterey or higher.</br>
+Runs on macOS 12.0+</br>
 You can build the code in XCode or download the latest release.
 
-If you download the latest release you maybe need to add an exception when you open the app:</br>
+You will need to add an exception when opening the app for the first time :</br>
 https://support.apple.com/en-gb/guide/mac-help/mh40616/mac
-
-Supported consoles and future update plans:
-| Console support | Comments |
-| --- | --- |
-| `PS1` | v1 BETA+ - Last updated on 03/12/2022 |
-| `PS2` | v1 BETA+ - Last updated on 03/12/2022 |
-| `PSX-DESR` | In development - next release |
-| `PS3` | v1 BETA+ - Last updated on 03/12/2022 |
-| `PS4` | v1 BETA+ - Last updated on 03/12/2022 |
-| `PSP` | v1 BETA+ - Last updated on 03/12/2022 |
-| `PSV` | Not plannned atm. |
 
 PS Mac Tools uses the following tools from other developers:
 
@@ -77,5 +71,6 @@ PS Mac Tools uses the following tools from other developers:
 | `esr_patcher` |  | https://github.com/edo9300/esr-disc-patcher-cli
 | `ps3mca-ps1` |  | https://github.com/israpps/PAKerUtility
 | `psexe2rom` | MottZilla, Alex Free | https://github.com/alex-free/psexe2rom
+| `pkg_merge` | Tustin, aldo-o | https://github.com/aldo-o/pkg-merge
 
-v1: All tools with the exception of 'ffplay' are re-compiled for ARM64 and x86_64 and bundled to a universal MacOS binary using 'lipo'.
+All tools with the exception of 'ffplay' are re-compiled for ARM64 and x86_64 and bundled to a universal MacOS binary using 'lipo'.

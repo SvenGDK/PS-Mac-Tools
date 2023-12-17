@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="sbt-ne-Lgx">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="sbt-ne-Lgx">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22155"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +11,7 @@
         <scene sceneID="VDU-cv-jCv">
             <objects>
                 <windowController id="sbt-ne-Lgx" customClass="PS2WindowController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
-                    <window key="window" title="PS Mac Tools" subtitle="PS2 Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="6gu-V9-DMD">
+                    <window key="window" title="PS2 Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="6gu-V9-DMD">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="425" y="462" width="1000" height="600"/>
@@ -800,8 +800,8 @@ Gw
     </scenes>
     <resources>
         <image name="NSFolder" width="32" height="32"/>
-        <image name="NSIconViewTemplate" width="19" height="18"/>
-        <image name="NSTouchBarDownloadTemplate" width="20" height="20"/>
-        <image name="opticaldisc.fill" catalog="system" width="20" height="20"/>
+        <image name="NSIconViewTemplate" width="25" height="23"/>
+        <image name="NSTouchBarDownloadTemplate" width="25" height="25"/>
+        <image name="opticaldisc.fill" catalog="system" width="25" height="25"/>
     </resources>
 </document>

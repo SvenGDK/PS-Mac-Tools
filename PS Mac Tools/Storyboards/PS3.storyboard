@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zC0-ye-sd4">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="zC0-ye-sd4">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="21507"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="22505"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,27 +23,27 @@
                                     <subviews>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="gFg-Zh-y0F">
                                             <rect key="frame" x="482" y="9" width="270" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Split ISO in 4GB parts (for FAT32 drives)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="bjd-2B-1oQ">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="268" id="Snd-Dx-M9y"/>
                                                 <constraint firstAttribute="width" secondItem="gFg-Zh-y0F" secondAttribute="height" multiplier="67:4" id="ajw-KP-gPI"/>
                                                 <constraint firstAttribute="height" constant="16" id="wFf-cj-grz"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="check" title="Split ISO in 4GB parts (for FAT32 drives)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="bjd-2B-1oQ">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="88T-xH-nrL">
                                             <rect key="frame" x="833" y="22" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Make" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GwV-g9-Rey">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="IcG-tM-wbF"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="TPP-JE-0Pe"/>
                                                 <constraint firstAttribute="width" secondItem="88T-xH-nrL" secondAttribute="height" multiplier="5:1" id="YPO-By-7rI"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Make" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="GwV-g9-Rey">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="makeSelectedISO:" target="7Kb-gV-8oP" id="0XY-47-fr8"/>
                                             </connections>
@@ -76,15 +76,15 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="0ea-cO-4an">
                                             <rect key="frame" x="482" y="31" width="307" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Save at default location (same as game folder)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="obz-xf-Mgs">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="16" id="5JY-JT-wWG"/>
                                                 <constraint firstAttribute="width" secondItem="0ea-cO-4an" secondAttribute="height" multiplier="305:16" id="RJe-eY-kKn"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="jaB-IL-Uvt"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="check" title="Save at default location (same as game folder)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="obz-xf-Mgs">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="changeDefaultMakeLocation:" target="7Kb-gV-8oP" id="QQc-vS-X0C"/>
                                             </connections>
@@ -117,30 +117,30 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="v88-rl-JGQ">
                                             <rect key="frame" x="833" y="49" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UDk-bS-oXU">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="v88-rl-JGQ" secondAttribute="height" multiplier="5:1" id="Rdu-WR-eSG"/>
                                                 <constraint firstAttribute="height" constant="20" id="tKM-Wx-mDN"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="waM-dQ-D9M"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="UDk-bS-oXU">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="browseMakeOutputFolder:" target="7Kb-gV-8oP" id="Nq5-bR-eYH"/>
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="cb2-zD-4QV">
                                             <rect key="frame" x="369" y="49" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G6l-rj-7QF">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="Huz-2H-Z4H"/>
                                                 <constraint firstAttribute="width" secondItem="cb2-zD-4QV" secondAttribute="height" multiplier="5:1" id="cnV-Ly-H6c"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="z9C-6E-k3n"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="G6l-rj-7QF">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="browseMakeInputFolder:" target="7Kb-gV-8oP" id="Bp6-BI-SXW"/>
                                             </connections>
@@ -188,27 +188,27 @@
                                     <subviews>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Yab-HC-dnv">
                                             <rect key="frame" x="482" y="9" width="295" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Split big files in 4GB parts (on FAT32 drives)" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="602-em-FKr">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="293" id="5hP-JW-tmM"/>
                                                 <constraint firstAttribute="height" constant="16" id="VLB-ds-IdK"/>
                                                 <constraint firstAttribute="width" secondItem="Yab-HC-dnv" secondAttribute="height" multiplier="293:16" id="b1q-Mp-6yM"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="check" title="Split big files in 4GB parts (on FAT32 drives)" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="602-em-FKr">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GJu-so-I8j">
                                             <rect key="frame" x="833" y="22" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Extract" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xsI-ip-eNs">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="6FZ-Sa-Rtl"/>
                                                 <constraint firstAttribute="height" constant="20" id="SEk-3e-b5b"/>
                                                 <constraint firstAttribute="width" secondItem="GJu-so-I8j" secondAttribute="height" multiplier="5:1" id="piH-eX-u5K"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Extract" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xsI-ip-eNs">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="extractSelectedISO:" target="7Kb-gV-8oP" id="zJl-nd-29A"/>
                                             </connections>
@@ -241,15 +241,15 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="62E-dz-i56">
                                             <rect key="frame" x="482" y="31" width="307" height="18"/>
+                                            <buttonCell key="cell" type="check" title="Save at default location (same as game folder)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="NJZ-9g-b8d">
+                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="305" id="OH2-6U-ieJ"/>
                                                 <constraint firstAttribute="width" secondItem="62E-dz-i56" secondAttribute="height" multiplier="305:16" id="dkE-dq-jKO"/>
                                                 <constraint firstAttribute="height" constant="16" id="upG-cJ-3wG"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="check" title="Save at default location (same as game folder)" bezelStyle="regularSquare" imagePosition="left" inset="2" id="NJZ-9g-b8d">
-                                                <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="changeDefaultExtractLocation:" target="7Kb-gV-8oP" id="7cQ-77-qbP"/>
                                             </connections>
@@ -282,30 +282,30 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="g0a-1l-38c">
                                             <rect key="frame" x="833" y="49" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wgc-4f-YAr">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="68T-Ir-mRq"/>
                                                 <constraint firstAttribute="width" secondItem="g0a-1l-38c" secondAttribute="height" multiplier="5:1" id="Bpx-Fv-VGq"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="G8p-FI-xLT"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="wgc-4f-YAr">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="browseExtractOutputFolder:" target="7Kb-gV-8oP" id="KYa-QF-TIg"/>
                                             </connections>
                                         </button>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lcj-gS-QsY">
                                             <rect key="frame" x="369" y="49" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KX5-wk-kEd">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="A3Y-3K-TNw"/>
                                                 <constraint firstAttribute="height" constant="20" id="VfR-8F-9qy"/>
                                                 <constraint firstAttribute="width" secondItem="lcj-gS-QsY" secondAttribute="height" multiplier="5:1" id="Xua-Ja-ZJt"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="KX5-wk-kEd">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="browsePS3ISO:" target="7Kb-gV-8oP" id="MjY-su-1tb"/>
                                             </connections>
@@ -367,15 +367,15 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bjG-eu-L32">
                                             <rect key="frame" x="599" y="41" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FBw-C0-Q6l">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="0in-Cn-sKK"/>
                                                 <constraint firstAttribute="width" secondItem="bjG-eu-L32" secondAttribute="height" multiplier="5:1" id="5hm-w2-fyr"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="l3H-lQ-gGR"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="FBw-C0-Q6l">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="browseSplitorMergeLocation:" target="7Kb-gV-8oP" id="QJ5-Pj-hG0"/>
                                             </connections>
@@ -395,15 +395,15 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9S1-A4-h04">
                                             <rect key="frame" x="493" y="19" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Split" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZYj-iu-XUt">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="9S1-A4-h04" secondAttribute="height" multiplier="5:1" id="a8j-CH-K8z"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="bAm-sX-JSW"/>
                                                 <constraint firstAttribute="height" constant="20" id="mKp-WS-Obc"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Split" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZYj-iu-XUt">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="splitorMergeGame:" target="7Kb-gV-8oP" id="JAd-fW-Cap"/>
                                             </connections>
@@ -464,15 +464,15 @@
                                         </textField>
                                         <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oUi-oU-Wco">
                                             <rect key="frame" x="599" y="41" width="114" height="32"/>
+                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kr5-ds-k5z">
+                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                <font key="font" metaFont="system"/>
+                                            </buttonCell>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="DaV-Zk-zqp"/>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Gju-ul-Atk"/>
                                                 <constraint firstAttribute="width" secondItem="oUi-oU-Wco" secondAttribute="height" multiplier="5:1" id="keO-k9-rmQ"/>
                                             </constraints>
-                                            <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="kr5-ds-k5z">
-                                                <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                <font key="font" metaFont="system"/>
-                                            </buttonCell>
                                             <connections>
                                                 <action selector="browsePatchFileLocation:" target="7Kb-gV-8oP" id="psZ-Fx-HAD"/>
                                             </connections>
@@ -490,11 +490,6 @@
                                         </button>
                                         <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="LY1-AK-L3s">
                                             <rect key="frame" x="249" y="22" width="121" height="25"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="20" id="Mm9-l7-sXy"/>
-                                                <constraint firstAttribute="width" secondItem="LY1-AK-L3s" secondAttribute="height" multiplier="57:10" id="PYu-Wv-E5i"/>
-                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="u6K-d2-ZmO"/>
-                                            </constraints>
                                             <popUpButtonCell key="cell" type="push" title="4.21" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" pullsDown="YES" selectedItem="WvC-6d-eUI" id="S3e-TX-ntd">
                                                 <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                 <font key="font" metaFont="menu"/>
@@ -521,6 +516,11 @@
                                                     </items>
                                                 </menu>
                                             </popUpButtonCell>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="20" id="Mm9-l7-sXy"/>
+                                                <constraint firstAttribute="width" secondItem="LY1-AK-L3s" secondAttribute="height" multiplier="57:10" id="PYu-Wv-E5i"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="114" id="u6K-d2-ZmO"/>
+                                            </constraints>
                                         </popUpButton>
                                     </subviews>
                                     <constraints>
@@ -829,7 +829,7 @@ Gw
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="bDn-Qu-p9C">
-                                                                    <rect key="frame" x="0.0" y="18" width="345" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="17" width="345" height="19"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="DdB-CF-USX">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -865,7 +865,7 @@ Gw
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="jUY-sY-Jkp">
-                                                                    <rect key="frame" x="0.0" y="18" width="101" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="17" width="101" height="19"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="DjR-3R-XXu">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -901,7 +901,7 @@ Gw
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="7hd-PA-QpE">
-                                                                    <rect key="frame" x="0.0" y="15" width="145" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="13" width="145" height="19"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="9Xv-Ac-PBE">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -937,7 +937,7 @@ Gw
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="fg2-QO-dk0">
-                                                                    <rect key="frame" x="0.0" y="15" width="283" height="16"/>
+                                                                    <rect key="frame" x="0.0" y="13" width="283" height="19"/>
                                                                     <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Table View Cell" id="s0e-Yr-q7F">
                                                                         <font key="font" usesAppearanceFont="YES"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
@@ -1204,13 +1204,13 @@ You can add multiple .cue files to the list to process more games than only 1.</
                                                             <subviews>
                                                                 <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="kVv-qV-3ZD">
                                                                     <rect key="frame" x="-4" y="51" width="110" height="31"/>
+                                                                    <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dos-an-hdi">
+                                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                                        <font key="font" metaFont="system" size="11"/>
+                                                                    </buttonCell>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="20" id="uV4-li-Cih"/>
                                                                     </constraints>
-                                                                    <buttonCell key="cell" type="push" title="Remove" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Dos-an-hdi">
-                                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                                        <font key="font" metaFont="smallSystem"/>
-                                                                    </buttonCell>
                                                                     <connections>
                                                                         <action selector="removeSelected:" target="PCh-wJ-fwW" id="9sT-EA-gme"/>
                                                                     </connections>
@@ -1249,21 +1249,21 @@ You can add multiple .cue files to the list to process more games than only 1.</
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="hn9-lQ-Bhd">
                                 <rect key="frame" x="789" y="13" width="199" height="32"/>
+                                <buttonCell key="cell" type="push" title="Merge all backups" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="it8-oB-nR2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="185" id="430-cd-Ddg"/>
                                     <constraint firstAttribute="height" constant="20" id="hwY-e1-Y1L"/>
                                     <constraint firstAttribute="width" secondItem="hn9-lQ-Bhd" secondAttribute="height" multiplier="37:4" id="qqN-Tg-KFe"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Merge all backups" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="it8-oB-nR2">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                                 <connections>
                                     <action selector="mergeAll:" target="PCh-wJ-fwW" id="b5G-RK-3eZ"/>
                                 </connections>
                             </button>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oMM-3Q-AGD">
-                                <rect key="frame" x="167" y="461" width="700" height="21"/>
+                                <rect key="frame" x="167" y="460" width="700" height="22"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4i6-gh-kOJ"/>
                                     <constraint firstAttribute="width" secondItem="oMM-3Q-AGD" secondAttribute="height" multiplier="100:3" id="mrj-4I-Cqp"/>
@@ -1277,15 +1277,15 @@ You can add multiple .cue files to the list to process more games than only 1.</
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Rs4-6K-EKx">
                                 <rect key="frame" x="868" y="454" width="119" height="32"/>
+                                <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mly-zT-7tv">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="WHY-8K-aGs"/>
                                     <constraint firstAttribute="width" secondItem="Rs4-6K-EKx" secondAttribute="height" multiplier="21:4" id="WWv-D3-xWj"/>
                                     <constraint firstAttribute="height" constant="20" id="YtQ-vk-EXX"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Select" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Mly-zT-7tv">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                                 <connections>
                                     <action selector="selectCue:" target="PCh-wJ-fwW" id="bSw-Ez-vkU"/>
                                 </connections>
@@ -1305,15 +1305,15 @@ You can add multiple .cue files to the list to process more games than only 1.</
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9CO-Rn-WQq">
                                 <rect key="frame" x="592" y="13" width="199" height="32"/>
+                                <buttonCell key="cell" type="push" title="Merge selected backup" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="msU-rh-zSE">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="185" id="0gP-5S-ygi"/>
                                     <constraint firstAttribute="height" constant="20" id="Xrw-3f-lXD"/>
                                     <constraint firstAttribute="width" secondItem="9CO-Rn-WQq" secondAttribute="height" multiplier="37:4" id="tkF-Bs-C4B"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Merge selected backup" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="msU-rh-zSE">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                                 <connections>
                                     <action selector="mergeSelected:" target="PCh-wJ-fwW" id="h7N-6Z-Ptn"/>
                                 </connections>
@@ -1363,11 +1363,11 @@ You can add multiple .cue files to the list to process more games than only 1.</
                                 <rect key="frame" x="-3" y="-4" width="257" height="148"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <view key="contentView" id="tul-0v-jfd">
-                                    <rect key="frame" x="4" y="5" width="249" height="128"/>
+                                    <rect key="frame" x="4" y="5" width="249" height="125"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <comboBox verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YpV-KW-0R9">
-                                            <rect key="frame" x="19" y="62" width="215" height="23"/>
+                                            <rect key="frame" x="19" y="59" width="215" height="23"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="Select your drive" drawsBackground="YES" completes="NO" usesDataSource="YES" numberOfVisibleItems="5" id="LnA-Pb-Dng">
                                                 <font key="font" metaFont="system"/>
@@ -1380,7 +1380,7 @@ You can add multiple .cue files to the list to process more games than only 1.</
                                             </connections>
                                         </comboBox>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6GY-Vb-bxE">
-                                            <rect key="frame" x="18" y="92" width="213" height="16"/>
+                                            <rect key="frame" x="18" y="89" width="213" height="16"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" lineBreakMode="clipping" title="Drive:" id="uWi-7P-Xt4">
                                                 <font key="font" metaFont="system"/>
@@ -1389,7 +1389,7 @@ You can add multiple .cue files to the list to process more games than only 1.</
                                             </textFieldCell>
                                         </textField>
                                         <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WU2-mS-HGx">
-                                            <rect key="frame" x="11" y="17" width="223" height="32"/>
+                                            <rect key="frame" x="11" y="14" width="223" height="32"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <buttonCell key="cell" type="push" title="Format" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sh4-p9-e1B">
                                                 <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1445,7 +1445,7 @@ You can add multiple .cue files to the list to process more games than only 1.</
                 </viewController>
                 <customObject id="k5P-iN-acY" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2439" y="943"/>
+            <point key="canvasLocation" x="-2431" y="937"/>
         </scene>
         <!--Settings-->
         <scene sceneID="2uf-SU-MIA">
@@ -1553,15 +1553,15 @@ You can add multiple .cue files to the list to process more games than only 1.</
                             </textField>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="xya-1d-fOc">
                                 <rect key="frame" x="387" y="115" width="158" height="18"/>
+                                <buttonCell key="cell" type="check" title="Convert to ISO before" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="veu-Lb-6mT">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="16" id="ORQ-gn-MOD"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="156" id="eaJ-Ax-x8f"/>
                                     <constraint firstAttribute="width" secondItem="xya-1d-fOc" secondAttribute="height" multiplier="39:4" id="guU-rY-5fH"/>
                                 </constraints>
-                                <buttonCell key="cell" type="check" title="Convert to ISO before" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="veu-Lb-6mT">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                             </button>
                             <progressIndicator maxValue="100" indeterminate="YES" controlSize="small" style="spinning" translatesAutoresizingMaskIntoConstraints="NO" id="mf0-uH-6u8">
                                 <rect key="frame" x="717" y="34" width="16" height="16"/>
@@ -1573,68 +1573,63 @@ You can add multiple .cue files to the list to process more games than only 1.</
                             </progressIndicator>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="U59-8B-ZUE">
                                 <rect key="frame" x="546" y="107" width="194" height="32"/>
+                                <buttonCell key="cell" type="push" title="Copy to selected folder" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Awy-1Y-QXk">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="le6-wh-dyQ"/>
                                     <constraint firstAttribute="width" secondItem="U59-8B-ZUE" secondAttribute="height" multiplier="9:1" id="nS5-sr-7GR"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="xSA-Cj-sUp"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Copy to selected folder" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Awy-1Y-QXk">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                                 <connections>
                                     <action selector="startCopy:" target="ZED-6F-leT" id="4cr-2t-2k2"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="KUM-FP-liz">
                                 <rect key="frame" x="216" y="115" width="159" height="18"/>
+                                <buttonCell key="cell" type="check" title="Exclude PS3_UPDATE" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="1vM-Kh-zeD">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="KUM-FP-liz" secondAttribute="height" multiplier="157:16" id="2U5-UW-lw6"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="58t-iE-HhB"/>
                                     <constraint firstAttribute="height" constant="16" id="PDg-Hy-Ovx"/>
                                 </constraints>
-                                <buttonCell key="cell" type="check" title="Exclude PS3_UPDATE" bezelStyle="regularSquare" imagePosition="left" enabled="NO" inset="2" id="1vM-Kh-zeD">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2lX-yA-zlj">
                                 <rect key="frame" x="65" y="115" width="57" height="18"/>
+                                <buttonCell key="cell" type="check" title="Mute" bezelStyle="regularSquare" imagePosition="left" inset="2" id="YvI-DE-lcF">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="2lX-yA-zlj" secondAttribute="height" multiplier="55:16" id="973-BP-VDk"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="HMH-hb-AXj"/>
                                     <constraint firstAttribute="height" constant="16" id="oWQ-tn-rXq"/>
                                 </constraints>
-                                <buttonCell key="cell" type="check" title="Mute" bezelStyle="regularSquare" imagePosition="left" inset="2" id="YvI-DE-lcF">
-                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                                 <connections>
                                     <action selector="controlBackgroundPlayer:" target="ZED-6F-leT" id="yGU-JG-xJW"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oYd-Z6-Ucz">
                                 <rect key="frame" x="660" y="137" width="80" height="32"/>
+                                <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M3T-tE-XR2">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="66" id="5eF-Sj-Nxh"/>
                                     <constraint firstAttribute="width" secondItem="oYd-Z6-Ucz" secondAttribute="height" multiplier="33:10" id="YLA-DN-KYj"/>
                                     <constraint firstAttribute="height" constant="20" id="lsY-a9-A5s"/>
                                 </constraints>
-                                <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M3T-tE-XR2">
-                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                    <font key="font" metaFont="system"/>
-                                </buttonCell>
                                 <connections>
                                     <action selector="browseDestinationFolder:" target="ZED-6F-leT" id="4CS-rS-61X"/>
                                 </connections>
                             </button>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Sbb-8j-YBq">
                                 <rect key="frame" x="640" y="25" width="76" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="174-KJ-OeN"/>
-                                    <constraint firstAttribute="height" constant="20" id="SjA-ft-980"/>
-                                    <constraint firstAttribute="width" secondItem="Sbb-8j-YBq" secondAttribute="height" multiplier="31:10" id="wBk-GC-4sx"/>
-                                </constraints>
                                 <buttonCell key="cell" type="push" title="Cancel" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rrz-7b-keF">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
@@ -1642,6 +1637,11 @@ You can add multiple .cue files to the list to process more games than only 1.</
 Gw
 </string>
                                 </buttonCell>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="62" id="174-KJ-OeN"/>
+                                    <constraint firstAttribute="height" constant="20" id="SjA-ft-980"/>
+                                    <constraint firstAttribute="width" secondItem="Sbb-8j-YBq" secondAttribute="height" multiplier="31:10" id="wBk-GC-4sx"/>
+                                </constraints>
                                 <connections>
                                     <action selector="cancelCopy:" target="ZED-6F-leT" id="Nmg-5i-LJ9"/>
                                 </connections>
@@ -1702,7 +1702,7 @@ Gw
         <scene sceneID="k3Z-s3-etP">
             <objects>
                 <windowController id="zC0-ye-sd4" sceneMemberID="viewController">
-                    <window key="window" title="PS Mac Tools v0.1" subtitle="PS3 Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EoQ-eb-nVV">
+                    <window key="window" title="PS3 Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="EoQ-eb-nVV">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="335" y="452" width="1000" height="600"/>
@@ -1725,48 +1725,13 @@ Gw
             </objects>
             <point key="canvasLocation" x="-1362" y="177"/>
         </scene>
-        <!--PS3 Home-->
-        <scene sceneID="xpm-cm-oOF">
-            <objects>
-                <viewController title="PS3 Home" id="GI9-AX-YNX" sceneMemberID="viewController">
-                    <view key="view" id="CYs-du-jbN">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <subviews>
-                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="gkU-of-saK">
-                                <rect key="frame" x="18" y="20" width="964" height="560"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="560" id="ZcQ-O3-sUd"/>
-                                </constraints>
-                                <textFieldCell key="cell" selectable="YES" alignment="center" allowsEditingTextAttributes="YES" id="p25-8K-KMj">
-                                    <font key="font" metaFont="system"/>
-                                    <string key="title"> This PS3 Toolset contains:
- 
- PS3 Backup Manager  PS3 ISO Utilities by bucanero: https://github.com/bucanero/ps3iso-utils  BINMerge by putnam: https://github.com/putnam/binmerge 
-  Homebrews:  IrisMAN by Aldostools: https://github.com/aldostools/IRISMAN  webMAN MOD by Aldostools: https://github.com/aldostools/webMAN-MOD  ManaGunZ by Zarh: https://github.com/Zarh/ManaGunZ  IDPSet by Zarh: https://github.com/Zarh/IDPSet  RetroArch by LibRetro: https://github.com/libretro/RetroArch</string>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                        </subviews>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="gkU-of-saK" secondAttribute="trailing" constant="20" symbolic="YES" id="DfC-ie-aVT"/>
-                            <constraint firstItem="gkU-of-saK" firstAttribute="top" secondItem="CYs-du-jbN" secondAttribute="top" constant="20" symbolic="YES" id="PIb-os-g7I"/>
-                            <constraint firstItem="gkU-of-saK" firstAttribute="leading" secondItem="CYs-du-jbN" secondAttribute="leading" constant="20" symbolic="YES" id="vZh-As-c96"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <customObject id="38B-j7-5jS" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-2439" y="943"/>
-        </scene>
     </scenes>
     <resources>
-        <image name="NSExitFullScreenTemplate" width="20" height="19"/>
-        <image name="NSHomeTemplate" width="24" height="20"/>
-        <image name="atom" catalog="system" width="17" height="18"/>
-        <image name="folder" catalog="system" width="23" height="18"/>
-        <image name="gearshape" catalog="system" width="21" height="21"/>
-        <image name="opticaldisc" catalog="system" width="20" height="20"/>
+        <image name="NSExitFullScreenTemplate" width="26" height="25"/>
+        <image name="NSHomeTemplate" width="30" height="26"/>
+        <image name="atom" catalog="system" width="21" height="21"/>
+        <image name="folder" catalog="system" width="29" height="23"/>
+        <image name="gearshape" catalog="system" width="26" height="26"/>
+        <image name="opticaldisc" catalog="system" width="25" height="25"/>
     </resources>
 </document>

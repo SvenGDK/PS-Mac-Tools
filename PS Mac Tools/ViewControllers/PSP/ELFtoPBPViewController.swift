@@ -49,7 +49,6 @@ class ELFtoPBPViewController: NSViewController, NSTableViewDelegate, NSTableView
         
         let makeAlert = NSAlert()
         let ELFFile = SelectedELFTextField.stringValue
-        let AppTitle = SelectedAppTitleTextField.stringValue
         let outputDirectory = FileManager.default.currentDirectoryPath
  
         makeAlert.messageText = "Please confirm"
