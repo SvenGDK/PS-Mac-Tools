@@ -39,10 +39,11 @@ class PayloadSender: NSViewController, NSTableViewDataSource, NSTableViewDelegat
     var PayloadTableItems = [PayloadTableItem]()
     
     func AddPayloadsToList() {
-        PayloadTableItems.append(PayloadTableItem(PayloadName: "FTPS5-Persistent", PayloadInfo: "FTP server for PS5. [v1.4]"))
+        PayloadTableItems.append(PayloadTableItem(PayloadName: "DumpGame", PayloadInfo: "Used for dumping SELF files [6.JAN.2024]"))
+        PayloadTableItems.append(PayloadTableItem(PayloadName: "FTPS5-Persistent", PayloadInfo: "FTP server for PS5, keeps running. [v1.4]"))
         PayloadTableItems.append(PayloadTableItem(PayloadName: "FTPS5-NonPersistent", PayloadInfo: "FTP server for PS5. [v1.4]"))
-        PayloadTableItems.append(PayloadTableItem(PayloadName: "kstuff", PayloadInfo: "fself and fpkg support (4.5x & 4.03 only)"))
-        PayloadTableItems.append(PayloadTableItem(PayloadName: "etaHEN", PayloadInfo: "AiO Homebrew Enabler [v1.1b]"))
+        PayloadTableItems.append(PayloadTableItem(PayloadName: "kstuff", PayloadInfo: "fSELF and fPKG support [3.00, 3.20, 3.21, 4.03, 4.50, 4.51]"))
+        PayloadTableItems.append(PayloadTableItem(PayloadName: "etaHEN", PayloadInfo: "All-in-One Homebrew Enabler [v1.3B]"))
         PayloadTableItems.append(PayloadTableItem(PayloadName: "mast1c0re Network Game Loader", PayloadInfo: "Load PS2 ISO games over the network using the mast1c0re vulnerability."))
         PayloadTableView.reloadData()
     }
@@ -136,6 +137,8 @@ class PayloadSender: NSViewController, NSTableViewDataSource, NSTableViewDelegat
         
         let SelectedPayloadName: String = PayloadTableItems[PayloadTableView.selectedRow].PayloadName
         switch SelectedPayloadName {
+        case "DumpGame":
+            PayloadAppPath = Bundle.main.path(forResource: "dumpgame.bin", ofType: "")!
         case "FTPS5-Persistent":
             PayloadAppPath = Bundle.main.path(forResource: "ftps5-p.elf", ofType: "")!
         case "FTPS5-NonPersistent":
@@ -143,7 +146,7 @@ class PayloadSender: NSViewController, NSTableViewDataSource, NSTableViewDelegat
         case "kstuff":
             PayloadAppPath = Bundle.main.path(forResource: "ps5-kstuff.elf", ofType: "")!
         case "etaHEN":
-            PayloadAppPath = Bundle.main.path(forResource: "etaHEN-1.1b.bin", ofType: "")!
+            PayloadAppPath = Bundle.main.path(forResource: "etaHEN-1.3B.bin", ofType: "")!
         case "mast1c0re Network Game Loader":
             PayloadAppPath = Bundle.main.path(forResource: "mast1c0re-ps2-network-game-loader-PS5-6-50.elf", ofType: "")!
         default:

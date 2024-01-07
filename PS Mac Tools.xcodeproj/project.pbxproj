@@ -8,11 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		754771B02B1C814900A97F71 /* PS5.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754771AF2B1C814900A97F71 /* PS5.storyboard */; };
-		755DFC652B24C95B00379CA1 /* etaHEN-1.1b.bin in Resources */ = {isa = PBXBuildFile; fileRef = 755DFC622B24C95B00379CA1 /* etaHEN-1.1b.bin */; };
 		755DFC662B24C95B00379CA1 /* ftps5-np.elf in Resources */ = {isa = PBXBuildFile; fileRef = 755DFC632B24C95B00379CA1 /* ftps5-np.elf */; };
 		755DFC672B24C95B00379CA1 /* ftps5-p.elf in Resources */ = {isa = PBXBuildFile; fileRef = 755DFC642B24C95B00379CA1 /* ftps5-p.elf */; };
 		755DFC6A2B24CB7C00379CA1 /* mast1c0re-ps2-network-game-loader-PS5-6-50.elf in Resources */ = {isa = PBXBuildFile; fileRef = 755DFC682B24CB7C00379CA1 /* mast1c0re-ps2-network-game-loader-PS5-6-50.elf */; };
-		755DFC6B2B24CB7C00379CA1 /* ps5-kstuff.bin in Resources */ = {isa = PBXBuildFile; fileRef = 755DFC692B24CB7C00379CA1 /* ps5-kstuff.bin */; };
 		756CDF112659656900790CB9 /* CopyWindowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 756CDF102659656900790CB9 /* CopyWindowViewController.swift */; };
 		75A2D5BE2B1E7B6100A8CDFF /* BDBurner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A2D5BD2B1E7B6100A8CDFF /* BDBurner.swift */; };
 		75ABAD3A2B1E37220073B034 /* PayloadSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75ABAD392B1E37220073B034 /* PayloadSender.swift */; };
@@ -27,6 +25,12 @@
 		75D88AD32647CDD6001ABBFA /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75D88AD22647CDD6001ABBFA /* MainWindowController.swift */; };
 		75D88AD52647CDD7001ABBFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75D88AD42647CDD7001ABBFA /* Assets.xcassets */; };
 		75D88AD82647CDD7001ABBFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75D88AD62647CDD7001ABBFA /* Main.storyboard */; };
+		C22DF8992B47C90D00681396 /* PS5GameUpdates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DF8982B47C90D00681396 /* PS5GameUpdates.storyboard */; };
+		C22DF89B2B47CC4100681396 /* make_fself in Resources */ = {isa = PBXBuildFile; fileRef = C22DF89A2B47CC4100681396 /* make_fself */; };
+		C22DF89D2B47CE4400681396 /* PS5AssetsBrowser.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C22DF89C2B47CE4400681396 /* PS5AssetsBrowser.storyboard */; };
+		C22DF89F2B47F8CE00681396 /* AssetsBrowser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF89E2B47F8CE00681396 /* AssetsBrowser.swift */; };
+		C22DF8A12B47F8DF00681396 /* GameUpdates.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF8A02B47F8DF00681396 /* GameUpdates.swift */; };
+		C22DF8A32B47FE5000681396 /* GameUpdateSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22DF8A22B47FE5000681396 /* GameUpdateSelector.swift */; };
 		C22E7A7A2B2882B600AF982C /* GameTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22E7A792B2882B600AF982C /* GameTableCellView.swift */; };
 		C24B270F290A68650041ED1B /* BackupManager4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B270E290A68650041ED1B /* BackupManager4ViewController.swift */; };
 		C24B2711290A6A9C0041ED1B /* BackupManager2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24B2710290A6A9C0041ED1B /* BackupManager2ViewController.swift */; };
@@ -35,6 +39,7 @@
 		C24B2717290A77410041ED1B /* PS3.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B2716290A77410041ED1B /* PS3.storyboard */; };
 		C24B2719290A776F0041ED1B /* PS2.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B2718290A776F0041ED1B /* PS2.storyboard */; };
 		C24B271B290A778A0041ED1B /* PS1.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C24B271A290A778A0041ED1B /* PS1.storyboard */; };
+		C25E8C5D2B49F3D400E72AAB /* PS5MakefSELF.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25E8C5C2B49F3D400E72AAB /* PS5MakefSELF.swift */; };
 		C2800E69293B73B10052F504 /* psexe2rom in Resources */ = {isa = PBXBuildFile; fileRef = C2800E68293B73B10052F504 /* psexe2rom */; };
 		C2800E6C293B8F950052F504 /* iso2opl in Resources */ = {isa = PBXBuildFile; fileRef = C2800E6B293B8F940052F504 /* iso2opl */; };
 		C28973F829168253000F3624 /* bchunk in Resources */ = {isa = PBXBuildFile; fileRef = C28973EB29168253000F3624 /* bchunk */; };
@@ -65,7 +70,17 @@
 		C28974262916A231000F3624 /* ELFtoPBPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28974252916A231000F3624 /* ELFtoPBPViewController.swift */; };
 		C28E1F3C2B275975007AE5CA /* PS5Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = C28E1F3B2B275975007AE5CA /* PS5Library.swift */; };
 		C2A8D6C12B298D3000C9C11A /* AppTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A8D6C02B298D3000C9C11A /* AppTableCellView.swift */; };
+		C2B409612B49DF13000D2C4A /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2B409602B49DF13000D2C4A /* Utils.swift */; };
+		C2B409642B49E4CE000D2C4A /* dumpgame.bin in Resources */ = {isa = PBXBuildFile; fileRef = C2B409622B49E4CE000D2C4A /* dumpgame.bin */; };
+		C2B409652B49E4CE000D2C4A /* ps5-kstuff.bin in Resources */ = {isa = PBXBuildFile; fileRef = C2B409632B49E4CE000D2C4A /* ps5-kstuff.bin */; };
+		C2B409672B49E4EC000D2C4A /* etaHEN-1.3B.bin in Resources */ = {isa = PBXBuildFile; fileRef = C2B409662B49E4EC000D2C4A /* etaHEN-1.3B.bin */; };
 		C2C02B5B290F0B40004DE491 /* psx2psp in Resources */ = {isa = PBXBuildFile; fileRef = C2C02B58290F0B3F004DE491 /* psx2psp */; };
+		C2C7581B2B4977C7001B2B8C /* ffplay in Resources */ = {isa = PBXBuildFile; fileRef = C2C7581A2B4977C7001B2B8C /* ffplay */; };
+		C2C7581D2B49973C001B2B8C /* DownloadQueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C7581C2B49973C001B2B8C /* DownloadQueueItem.swift */; };
+		C2D565C82B4ADB27002A528F /* DownloadStateCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D565C72B4ADB27002A528F /* DownloadStateCellView.swift */; };
+		C2D565CC2B4AE67C002A528F /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D565CB2B4AE67C002A528F /* DownloadManager.swift */; };
+		C2D565CF2B4B315C002A528F /* PS5TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D565CE2B4B315C002A528F /* PS5TabViewController.swift */; };
+		C2D565D12B4B3996002A528F /* PS5CopyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D565D02B4B3996002A528F /* PS5CopyViewController.swift */; };
 		C2D93BC32916A7AA0034C311 /* binmerge in Resources */ = {isa = PBXBuildFile; fileRef = C2D93BC12916A6D50034C311 /* binmerge */; };
 		C2D93BC42916A9A10034C311 /* PS2WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7581C41326501C1A00B558C4 /* PS2WindowController.swift */; };
 		C2D93BC52916A9BD0034C311 /* BackupManager3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CEDC7626510CAF0096DC7D /* BackupManager3ViewController.swift */; };
@@ -78,18 +93,15 @@
 		C2D9775A2B2DAE8800FB59D8 /* PS5Manifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D977592B2DAE8800FB59D8 /* PS5Manifest.swift */; };
 		C2D9775C2B2DC3F900FB59D8 /* AdvancedJSONEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D9775B2B2DC3F900FB59D8 /* AdvancedJSONEditor.swift */; };
 		C2EB50E9290BABAE0010C24D /* unar in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E0290BABAD0010C24D /* unar */; };
-		C2EB50F0290BABAE0010C24D /* ffplay in Resources */ = {isa = PBXBuildFile; fileRef = C2EB50E7290BABAE0010C24D /* ffplay */; };
 		C2F86A402B2EE58300B51DBA /* PS5Downloads.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F86A3F2B2EE58300B51DBA /* PS5Downloads.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		754771AF2B1C814900A97F71 /* PS5.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS5.storyboard; sourceTree = "<group>"; };
 		754E101F264FB028008FB2E4 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		755DFC622B24C95B00379CA1 /* etaHEN-1.1b.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "etaHEN-1.1b.bin"; sourceTree = "<group>"; };
 		755DFC632B24C95B00379CA1 /* ftps5-np.elf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ftps5-np.elf"; sourceTree = "<group>"; };
 		755DFC642B24C95B00379CA1 /* ftps5-p.elf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ftps5-p.elf"; sourceTree = "<group>"; };
 		755DFC682B24CB7C00379CA1 /* mast1c0re-ps2-network-game-loader-PS5-6-50.elf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mast1c0re-ps2-network-game-loader-PS5-6-50.elf"; sourceTree = "<group>"; };
-		755DFC692B24CB7C00379CA1 /* ps5-kstuff.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ps5-kstuff.bin"; sourceTree = "<group>"; };
 		756CDF102659656900790CB9 /* CopyWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyWindowViewController.swift; sourceTree = "<group>"; };
 		7581C41326501C1A00B558C4 /* PS2WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS2WindowController.swift; sourceTree = "<group>"; };
 		758CAA5A26628250004040D5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -114,6 +126,12 @@
 		75D88AD72647CDD7001ABBFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75D88AD92647CDD7001ABBFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75D88ADA2647CDD7001ABBFA /* PS_Mac_Tools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PS_Mac_Tools.entitlements; sourceTree = "<group>"; };
+		C22DF8982B47C90D00681396 /* PS5GameUpdates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS5GameUpdates.storyboard; sourceTree = "<group>"; };
+		C22DF89A2B47CC4100681396 /* make_fself */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = make_fself; sourceTree = "<group>"; };
+		C22DF89C2B47CE4400681396 /* PS5AssetsBrowser.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS5AssetsBrowser.storyboard; sourceTree = "<group>"; };
+		C22DF89E2B47F8CE00681396 /* AssetsBrowser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetsBrowser.swift; sourceTree = "<group>"; };
+		C22DF8A02B47F8DF00681396 /* GameUpdates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUpdates.swift; sourceTree = "<group>"; };
+		C22DF8A22B47FE5000681396 /* GameUpdateSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameUpdateSelector.swift; sourceTree = "<group>"; };
 		C22E7A792B2882B600AF982C /* GameTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableCellView.swift; sourceTree = "<group>"; };
 		C24B270E290A68650041ED1B /* BackupManager4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager4ViewController.swift; sourceTree = "<group>"; };
 		C24B2710290A6A9C0041ED1B /* BackupManager2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackupManager2ViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +140,7 @@
 		C24B2716290A77410041ED1B /* PS3.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS3.storyboard; sourceTree = "<group>"; };
 		C24B2718290A776F0041ED1B /* PS2.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS2.storyboard; sourceTree = "<group>"; };
 		C24B271A290A778A0041ED1B /* PS1.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PS1.storyboard; sourceTree = "<group>"; };
+		C25E8C5C2B49F3D400E72AAB /* PS5MakefSELF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS5MakefSELF.swift; sourceTree = "<group>"; };
 		C2800E68293B73B10052F504 /* psexe2rom */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = psexe2rom; sourceTree = "<group>"; };
 		C2800E6B293B8F940052F504 /* iso2opl */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = iso2opl; sourceTree = "<group>"; };
 		C28973EB29168253000F3624 /* bchunk */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = bchunk; sourceTree = "<group>"; };
@@ -152,14 +171,23 @@
 		C28974252916A231000F3624 /* ELFtoPBPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFtoPBPViewController.swift; sourceTree = "<group>"; };
 		C28E1F3B2B275975007AE5CA /* PS5Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS5Library.swift; sourceTree = "<group>"; };
 		C2A8D6C02B298D3000C9C11A /* AppTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTableCellView.swift; sourceTree = "<group>"; };
+		C2B409602B49DF13000D2C4A /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		C2B409622B49E4CE000D2C4A /* dumpgame.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = dumpgame.bin; sourceTree = "<group>"; };
+		C2B409632B49E4CE000D2C4A /* ps5-kstuff.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "ps5-kstuff.bin"; sourceTree = "<group>"; };
+		C2B409662B49E4EC000D2C4A /* etaHEN-1.3B.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; path = "etaHEN-1.3B.bin"; sourceTree = "<group>"; };
 		C2C02B58290F0B3F004DE491 /* psx2psp */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = psx2psp; sourceTree = "<group>"; };
+		C2C7581A2B4977C7001B2B8C /* ffplay */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffplay; sourceTree = "<group>"; };
+		C2C7581C2B49973C001B2B8C /* DownloadQueueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadQueueItem.swift; sourceTree = "<group>"; };
+		C2D565C72B4ADB27002A528F /* DownloadStateCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadStateCellView.swift; sourceTree = "<group>"; };
+		C2D565CB2B4AE67C002A528F /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		C2D565CE2B4B315C002A528F /* PS5TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS5TabViewController.swift; sourceTree = "<group>"; };
+		C2D565D02B4B3996002A528F /* PS5CopyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS5CopyViewController.swift; sourceTree = "<group>"; };
 		C2D93BC12916A6D50034C311 /* binmerge */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = binmerge; sourceTree = "<group>"; };
 		C2D977532B2ADA0300FB59D8 /* PKGMerger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKGMerger.swift; sourceTree = "<group>"; };
 		C2D977552B2ADD7200FB59D8 /* pkg_merge */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = pkg_merge; sourceTree = "<group>"; };
 		C2D977592B2DAE8800FB59D8 /* PS5Manifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS5Manifest.swift; sourceTree = "<group>"; };
 		C2D9775B2B2DC3F900FB59D8 /* AdvancedJSONEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvancedJSONEditor.swift; sourceTree = "<group>"; };
 		C2EB50E0290BABAD0010C24D /* unar */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = unar; sourceTree = "<group>"; };
-		C2EB50E7290BABAE0010C24D /* ffplay */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffplay; sourceTree = "<group>"; };
 		C2F86A3F2B2EE58300B51DBA /* PS5Downloads.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PS5Downloads.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -195,6 +223,15 @@
 				C2D977532B2ADA0300FB59D8 /* PKGMerger.swift */,
 				C2D9775B2B2DC3F900FB59D8 /* AdvancedJSONEditor.swift */,
 				C2F86A3F2B2EE58300B51DBA /* PS5Downloads.swift */,
+				C22DF8982B47C90D00681396 /* PS5GameUpdates.storyboard */,
+				C22DF89C2B47CE4400681396 /* PS5AssetsBrowser.storyboard */,
+				C22DF89E2B47F8CE00681396 /* AssetsBrowser.swift */,
+				C22DF8A02B47F8DF00681396 /* GameUpdates.swift */,
+				C22DF8A22B47FE5000681396 /* GameUpdateSelector.swift */,
+				C25E8C5C2B49F3D400E72AAB /* PS5MakefSELF.swift */,
+				C2D565C72B4ADB27002A528F /* DownloadStateCellView.swift */,
+				C2D565CB2B4AE67C002A528F /* DownloadManager.swift */,
+				C2D565D02B4B3996002A528F /* PS5CopyViewController.swift */,
 			);
 			path = PS5;
 			sourceTree = "<group>";
@@ -202,9 +239,10 @@
 		75B502C32B232247002C4C69 /* Payloads */ = {
 			isa = PBXGroup;
 			children = (
+				C2B409662B49E4EC000D2C4A /* etaHEN-1.3B.bin */,
+				C2B409622B49E4CE000D2C4A /* dumpgame.bin */,
+				C2B409632B49E4CE000D2C4A /* ps5-kstuff.bin */,
 				755DFC682B24CB7C00379CA1 /* mast1c0re-ps2-network-game-loader-PS5-6-50.elf */,
-				755DFC692B24CB7C00379CA1 /* ps5-kstuff.bin */,
-				755DFC622B24C95B00379CA1 /* etaHEN-1.1b.bin */,
 				755DFC632B24C95B00379CA1 /* ftps5-np.elf */,
 				755DFC642B24C95B00379CA1 /* ftps5-p.elf */,
 			);
@@ -214,6 +252,8 @@
 		75B502C42B232256002C4C69 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				C2C7581A2B4977C7001B2B8C /* ffplay */,
+				C22DF89A2B47CC4100681396 /* make_fself */,
 				C2D977552B2ADD7200FB59D8 /* pkg_merge */,
 				C2D93BC12916A6D50034C311 /* binmerge */,
 				C2800E6B293B8F940052F504 /* iso2opl */,
@@ -234,7 +274,6 @@
 				C28973F629168253000F3624 /* sfoutil */,
 				C28973F229168253000F3624 /* splitps3iso */,
 				C2C02B58290F0B3F004DE491 /* psx2psp */,
-				C2EB50E7290BABAE0010C24D /* ffplay */,
 				C2EB50E0290BABAD0010C24D /* unar */,
 			);
 			path = Tools;
@@ -271,8 +310,11 @@
 			children = (
 				75CF82072B1FA45200CE3D52 /* PS5Param.swift */,
 				C2D977592B2DAE8800FB59D8 /* PS5Manifest.swift */,
+				C2C7581C2B49973C001B2B8C /* DownloadQueueItem.swift */,
+				C2B409602B49DF13000D2C4A /* Utils.swift */,
 				75B502C42B232256002C4C69 /* Tools */,
 				75B502C32B232247002C4C69 /* Payloads */,
+				C2D565CD2B4B313C002A528F /* TabViewControllers */,
 				C289740729168421000F3624 /* WindowControllers */,
 				C24B271D290A77C60041ED1B /* ViewControllers */,
 				C24B271C290A779E0041ED1B /* Storyboards */,
@@ -378,6 +420,14 @@
 			path = PSP;
 			sourceTree = "<group>";
 		};
+		C2D565CD2B4B313C002A528F /* TabViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C2D565CE2B4B315C002A528F /* PS5TabViewController.swift */,
+			);
+			path = TabViewControllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -446,6 +496,7 @@
 				C24B2715290A6CBF0041ED1B /* PS4.storyboard in Resources */,
 				75D88AD52647CDD7001ABBFA /* Assets.xcassets in Resources */,
 				C28973FF29168253000F3624 /* splitps3iso in Resources */,
+				C22DF89D2B47CE4400681396 /* PS5AssetsBrowser.storyboard in Resources */,
 				C2EB50E9290BABAE0010C24D /* unar in Resources */,
 				C24B271B290A778A0041ED1B /* PS1.storyboard in Resources */,
 				C289740429168253000F3624 /* popstation in Resources */,
@@ -453,22 +504,25 @@
 				C28973FB29168253000F3624 /* ps3mca-ps1 in Resources */,
 				C2C02B5B290F0B40004DE491 /* psx2psp in Resources */,
 				755DFC6A2B24CB7C00379CA1 /* mast1c0re-ps2-network-game-loader-PS5-6-50.elf in Resources */,
+				C2C7581B2B4977C7001B2B8C /* ffplay in Resources */,
 				C289740129168253000F3624 /* extractps3iso in Resources */,
 				C24B2719290A776F0041ED1B /* PS2.storyboard in Resources */,
 				C2D977562B2ADD7200FB59D8 /* pkg_merge in Resources */,
-				C2EB50F0290BABAE0010C24D /* ffplay in Resources */,
 				755DFC662B24C95B00379CA1 /* ftps5-np.elf in Resources */,
 				C28973FC29168253000F3624 /* isoinfo in Resources */,
+				C2B409652B49E4CE000D2C4A /* ps5-kstuff.bin in Resources */,
 				75D88AD82647CDD7001ABBFA /* Main.storyboard in Resources */,
-				755DFC6B2B24CB7C00379CA1 /* ps5-kstuff.bin in Resources */,
 				C2800E6C293B8F950052F504 /* iso2opl in Resources */,
 				C28973FD29168253000F3624 /* esr_patcher in Resources */,
 				754771B02B1C814900A97F71 /* PS5.storyboard in Resources */,
 				755DFC672B24C95B00379CA1 /* ftps5-p.elf in Resources */,
 				C28973F829168253000F3624 /* bchunk in Resources */,
-				755DFC652B24C95B00379CA1 /* etaHEN-1.1b.bin in Resources */,
+				C22DF89B2B47CC4100681396 /* make_fself in Resources */,
 				C24B2717290A77410041ED1B /* PS3.storyboard in Resources */,
+				C2B409672B49E4EC000D2C4A /* etaHEN-1.3B.bin in Resources */,
 				C28974242916A1FF000F3624 /* pspdecompiler in Resources */,
+				C22DF8992B47C90D00681396 /* PS5GameUpdates.storyboard in Resources */,
+				C2B409642B49E4CE000D2C4A /* dumpgame.bin in Resources */,
 				C289740D29169748000F3624 /* PSP.storyboard in Resources */,
 				C28974232916A1FF000F3624 /* elf2pbp in Resources */,
 				C28973F929168253000F3624 /* PAKerUtility in Resources */,
@@ -488,6 +542,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2D93BC72916A9C90034C311 /* PS3ISOToolsViewController.swift in Sources */,
+				C22DF8A32B47FE5000681396 /* GameUpdateSelector.swift in Sources */,
 				756CDF112659656900790CB9 /* CopyWindowViewController.swift in Sources */,
 				C2D9775C2B2DC3F900FB59D8 /* AdvancedJSONEditor.swift in Sources */,
 				C24B270F290A68650041ED1B /* BackupManager4ViewController.swift in Sources */,
@@ -502,8 +557,12 @@
 				C2D93BC42916A9A10034C311 /* PS2WindowController.swift in Sources */,
 				75D88AD32647CDD6001ABBFA /* MainWindowController.swift in Sources */,
 				C289741E2916986C000F3624 /* BurnViewController.swift in Sources */,
+				C2D565CC2B4AE67C002A528F /* DownloadManager.swift in Sources */,
+				C22DF89F2B47F8CE00681396 /* AssetsBrowser.swift in Sources */,
+				C2B409612B49DF13000D2C4A /* Utils.swift in Sources */,
 				75D88AD12647CDD6001ABBFA /* AppDelegate.swift in Sources */,
 				C2F86A402B2EE58300B51DBA /* PS5Downloads.swift in Sources */,
+				C25E8C5D2B49F3D400E72AAB /* PS5MakefSELF.swift in Sources */,
 				C28974182916983B000F3624 /* ISOtoOPLViewController.swift in Sources */,
 				C22E7A7A2B2882B600AF982C /* GameTableCellView.swift in Sources */,
 				C2897412291697ED000F3624 /* BINMergePS1ViewController.swift in Sources */,
@@ -511,17 +570,22 @@
 				C2A8D6C12B298D3000C9C11A /* AppTableCellView.swift in Sources */,
 				75ABAD422B1E377A0073B034 /* PS5WindowController.swift in Sources */,
 				C2D93BC92916A9D40034C311 /* SettingsViewController.swift in Sources */,
+				C2D565D12B4B3996002A528F /* PS5CopyViewController.swift in Sources */,
 				75ABAD3C2B1E37310073B034 /* FTPBrowser.swift in Sources */,
 				C28974102916976E000F3624 /* BackupManagerPSPViewController.swift in Sources */,
 				75ABAD3E2B1E373A0073B034 /* FTPGrabber.swift in Sources */,
 				75ABAD3A2B1E37220073B034 /* PayloadSender.swift in Sources */,
+				C2D565CF2B4B315C002A528F /* PS5TabViewController.swift in Sources */,
 				C2D93BC52916A9BD0034C311 /* BackupManager3ViewController.swift in Sources */,
+				C2C7581D2B49973C001B2B8C /* DownloadQueueItem.swift in Sources */,
 				C28E1F3C2B275975007AE5CA /* PS5Library.swift in Sources */,
 				75CEDC79265168B60096DC7D /* FormatDriveViewController.swift in Sources */,
 				C28974142916980E000F3624 /* HomebrewPS1ViewController.swift in Sources */,
 				C289741C29169861000F3624 /* HomebrewPS2ViewController.swift in Sources */,
+				C2D565C82B4ADB27002A528F /* DownloadStateCellView.swift in Sources */,
 				C2897420291698A7000F3624 /* ISOtoCISOViewController.swift in Sources */,
 				C2D9775A2B2DAE8800FB59D8 /* PS5Manifest.swift in Sources */,
+				C22DF8A12B47F8DF00681396 /* GameUpdates.swift in Sources */,
 				75A2D5BE2B1E7B6100A8CDFF /* BDBurner.swift in Sources */,
 				C28974262916A231000F3624 /* ELFtoPBPViewController.swift in Sources */,
 			);
@@ -683,7 +747,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "SvenGDK.PS-Mac-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;
@@ -715,7 +779,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 12.0;
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "SvenGDK.PS-Mac-Tools";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_INSTALL_OBJC_HEADER = NO;

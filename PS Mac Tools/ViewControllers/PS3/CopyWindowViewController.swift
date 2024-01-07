@@ -63,7 +63,6 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
             
             sourceFolderContentCount = try! FileManager.default.subpathsOfDirectory(atPath: sourceFolder).count
             copyProgressBar.maxValue = Double(sourceFolderContentCount)
-            print(sourceFolderContentCount)
             
             copyMainText.stringValue = "Preparing to copy " + URL.init(string: sourceFolder)!.lastPathComponent
             copyDetailsText.stringValue = "Waiting for destination folder ..."
@@ -118,8 +117,8 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
         cancelCopyButton.isEnabled = false
         
         if !sourceFolder.contains(".iso") {
-            let gameName = URL.init(string: sourceFolder)?.lastPathComponent // BLES-00000
-            let destinationGameFolder = destinationTextField.stringValue + "/" + gameName! // /Volumes/Untitled/BLES-00000
+            let gameName = URL.init(string: sourceFolder)?.lastPathComponent
+            let destinationGameFolder = destinationTextField.stringValue + "/" + gameName!
             
             copyMainText.stringValue = "Copying..."
             copyToDestination(destinationFolder: destinationGameFolder)
@@ -144,7 +143,6 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
         
         // Create GAME Directory
         if !FileManager.default.fileExists(atPath: destinationFolder) {
-            print("Game directory does not exist! Creating...")
             
             try! FileManager.default.createDirectory(atPath: destinationFolder, withIntermediateDirectories: true, attributes: nil)
         }
@@ -159,21 +157,15 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
                 
                 if gameFileManager.fileExists(atPath: self.sourceFolder + "/" + destinationFile, isDirectory:&isDir) {
                     if isDir.boolValue {
-                        print("Found directory in gamefolder, creating folder at destination...")
-
                         try! FileManager.default.createDirectory(atPath: destinationFolder + "/" + destinationFile, withIntermediateDirectories: true, attributes: nil)
                     
                         self.dirsCopied += 1
                         self.totalCopied += 1
-                        print("Created: " + self.dirsCopied.description + " directories.")
                     } else {
-                        print("Found file in gamefolder, copying to destination...")
-                    
                         try! FileManager.default.copyItem(atPath: self.sourceFolder + "/" + destinationFile, toPath: destinationFolder + "/" + destinationFile)
       
                         self.filesCopied += 1
                         self.totalCopied += 1
-                        print("Copied: " + self.filesCopied.description + " files.")
                     }
                 }
 
@@ -182,7 +174,7 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
                     self.copyDetailsText.stringValue = "Copied " + self.dirsCopied.description + " directories and " + self.filesCopied.description + " files."
                     
                     if self.copyProgressBar.doubleValue == Double(self.sourceFolderContentCount) {
-                        print("DONE")
+
                     }
                 }
     
@@ -227,7 +219,6 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
                             self.progressPercent = Double(targetFileSize)/Double(sourceFileSize)
                             print(self.progressPercent)
 
-                            
                         }
                         bytes_read = read(open_source, &buffer, bufferSize);
                     }
@@ -256,32 +247,14 @@ class CopyWindowViewController: NSViewController, FileManagerDelegate {
             }
         
     }
-
-    func sizeForLocalFilePath(filePath:String) -> UInt64 {
-        do {
-            let sizeWatcher = FileManager()
-            let fileAttributes = try sizeWatcher.attributesOfItem(atPath: filePath)
-            if let fileSize = fileAttributes[FileAttributeKey.size]  {
-                return (fileSize as! NSNumber).uint64Value
-            } else {
-                print("Failed to get a size attribute from path: \(filePath)")
-            }
-        } catch {
-            print("Failed to get file attributes for local path: \(filePath) with error: \(error)")
-        }
-        return 0
-    }
     
     @IBAction func controlBackgroundPlayer(_ sender: NSButton) {
-        
         backgroundAudioPlayerCopy.terminate()
         muteCheckBox.isEnabled = false
-
     }
     
     @IBAction func cancelCopy(_ sender: NSButton) {
-        
-        self.dismiss(self)
+        self.view.window?.close()
     }
     
 }

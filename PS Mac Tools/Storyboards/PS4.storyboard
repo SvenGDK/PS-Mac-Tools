@@ -37,7 +37,6 @@
                 <tabViewController title="PS4 Home" selectedTabViewItemIndex="0" tabStyle="toolbar" id="7Ar-fD-s6i" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Backup Manager" identifier="" image="NSFolder" id="pgf-lG-IP6"/>
-                        <tabViewItem identifier="" id="fs2-0q-P0p"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="6Kg-EJ-h6P">
                         <rect key="frame" x="0.0" y="0.0" width="450" height="300"/>
@@ -50,7 +49,6 @@
                     <connections>
                         <outlet property="tabView" destination="6Kg-EJ-h6P" id="TJo-qj-B8c"/>
                         <segue destination="lGQ-bh-9jc" kind="relationship" relationship="tabItems" id="EuG-zK-ozj"/>
-                        <segue destination="icf-iN-IVX" kind="relationship" relationship="tabItems" id="E5h-og-qaV"/>
                     </connections>
                 </tabViewController>
                 <customObject id="fRc-RN-VrV" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -362,19 +360,6 @@
                 <customObject id="gZy-jM-qPg" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="90" y="42"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="KJe-Nx-eFX">
-            <objects>
-                <viewController id="icf-iN-IVX" sceneMemberID="viewController">
-                    <view key="view" id="5Zd-Ri-qek">
-                        <rect key="frame" x="0.0" y="0.0" width="1200" height="486"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </view>
-                </viewController>
-                <customObject id="zXa-7Q-glp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="90" y="748"/>
         </scene>
     </scenes>
     <resources>

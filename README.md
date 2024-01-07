@@ -8,7 +8,7 @@ The macOS version of PS Multi Tools.</br>Contains tools & backup manager for PS1
 
 ### macOS
 - macOS 12.0 or higher
-- Homebrew packages :
+- Homebrew with following packages :
   - 'wget' (Used for mirroring directories from FTP)
   - 'jdk11' (Used for sending .jar payloads)
   - 'netcat' (Used to dump self files - more stable than macOS's 'nc')

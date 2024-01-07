@@ -9,7 +9,7 @@
         <!--Window Controller-->
         <scene sceneID="dH0-SI-pv6">
             <objects>
-                <windowController id="DHZ-DP-8wZ" customClass="PS5WindowController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <windowController storyboardIdentifier="PS5MainWindowController" id="DHZ-DP-8wZ" customClass="PS5WindowController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="PS5 Tools" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="lOh-K8-jIp">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -34,15 +34,16 @@
         <!--Tab View Controller-->
         <scene sceneID="nR1-8H-Udd">
             <objects>
-                <tabViewController selectedTabViewItemIndex="0" tabStyle="toolbar" id="uQv-UP-Vxz" sceneMemberID="viewController">
+                <tabViewController storyboardIdentifier="PS5TabVC" selectedTabViewItemIndex="0" tabStyle="toolbar" id="uQv-UP-Vxz" customClass="PS5TabViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <tabViewItems>
                         <tabViewItem label="Library" identifier="" image="building.columns" catalog="system" id="oRq-8q-RAd"/>
                         <tabViewItem label="Payload Sender" identifier="" image="paperplane.fill" catalog="system" id="FR4-Lq-joz"/>
                         <tabViewItem label="FTP Browser" image="network" catalog="system" id="fNj-e4-vSB"/>
                         <tabViewItem label="FTP Grabber" image="arrow.down.doc" catalog="system" id="Fl2-1d-5gW"/>
-                        <tabViewItem label="Param &amp; Manifest JSON Editor" image="pencil" catalog="system" id="Oph-WU-X4Y"/>
+                        <tabViewItem label="Param &amp; Manifest Editor" image="pencil" catalog="system" id="Oph-WU-X4Y"/>
                         <tabViewItem label="Blu Ray Burner" image="opticaldisc" catalog="system" id="z65-Uc-cP4"/>
                         <tabViewItem label="PKG Merger" image="arrow.triangle.merge" catalog="system" id="8M6-jz-Ox5"/>
+                        <tabViewItem label="Make fSELF" image="signature" catalog="system" id="SGi-kf-QLy"/>
                         <tabViewItem label="Downloads" image="arrow.down" catalog="system" id="M3l-bh-cZz"/>
                     </tabViewItems>
                     <tabView key="tabView" type="noTabsNoBorder" id="8Uo-A3-fWW">
@@ -62,6 +63,7 @@
                         <segue destination="eGK-ct-nUq" kind="relationship" relationship="tabItems" id="6Dg-nU-Qcj"/>
                         <segue destination="2op-yN-r50" kind="relationship" relationship="tabItems" id="2os-xD-duV"/>
                         <segue destination="z6R-an-Jxe" kind="relationship" relationship="tabItems" id="98j-hm-UpF"/>
+                        <segue destination="evH-Nj-NCa" kind="relationship" relationship="tabItems" id="2JP-Os-z2F"/>
                         <segue destination="GAk-B7-r7q" kind="relationship" relationship="tabItems" id="Obu-i2-RLk"/>
                     </connections>
                 </tabViewController>
@@ -72,7 +74,7 @@
         <!--Library-->
         <scene sceneID="m04-VU-kdo">
             <objects>
-                <viewController title="Library" id="Gga-iB-LlM" customClass="PS5Library" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Library" storyboardIdentifier="PS5LibraryVC" id="Gga-iB-LlM" customClass="PS5Library" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="56Z-3f-2fJ">
                         <rect key="frame" x="0.0" y="0.0" width="1300" height="800"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -375,6 +377,121 @@
                 <customObject id="bmK-7m-X9r" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1016" y="1685"/>
+        </scene>
+        <!--Copy View Controller-->
+        <scene sceneID="C9z-EL-PBG">
+            <objects>
+                <viewController storyboardIdentifier="PS5CopyVC" id="SPS-KZ-sel" customClass="PS5CopyViewController" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="mZy-4A-BHw">
+                        <rect key="frame" x="0.0" y="0.0" width="900" height="550"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ubb-O8-JH5">
+                                <rect key="frame" x="13" y="13" width="139" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Close Popover" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="lOA-xQ-FHN">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="ClosePopover:" target="SPS-KZ-sel" id="ol0-sf-sfl"/>
+                                </connections>
+                            </button>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ksF-Wr-A5a">
+                                <rect key="frame" x="18" y="121" width="864" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Copy not started yet" id="XzN-BC-h0v">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <progressIndicator fixedFrame="YES" maxValue="100" style="bar" translatesAutoresizingMaskIntoConstraints="NO" id="xDR-k4-5W2">
+                                <rect key="frame" x="20" y="94" width="860" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressIndicator>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Buq-gt-kUT">
+                                <rect key="frame" x="18" y="68" width="864" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Current file : /" id="jpo-UT-kod">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jmc-x9-qcf">
+                                <rect key="frame" x="322" y="274" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="COH-af-Ci3"/>
+                            </imageView>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MEL-77-njd">
+                                <rect key="frame" x="20" y="184" width="787" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="3ue-E6-ebu">
+                                    <font key="font" usesAppearanceFont="YES"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W3W-sL-i1a">
+                                <rect key="frame" x="18" y="216" width="791" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" controlSize="large" lineBreakMode="clipping" title="Where do you want to copy the selected game ?" id="vQc-S3-smb">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4gE-OM-ulg">
+                                <rect key="frame" x="808" y="179" width="79" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="anu-p2-Y2R">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="BrowseDestinationFolder:" target="SPS-KZ-sel" id="Kn8-7a-QGo"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="olT-Jb-93z">
+                                <rect key="frame" x="702" y="149" width="112" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Start Copy" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="sSv-Kl-W3T">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="StartCopy:" target="SPS-KZ-sel" id="4gT-eZ-Tdn"/>
+                                </connections>
+                            </button>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ovn-4N-fZ9">
+                                <rect key="frame" x="761" y="13" width="126" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Cancel Copy" bezelStyle="rounded" alignment="center" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="50V-ND-CGg">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="CancelCopy:" target="SPS-KZ-sel" id="ev6-PV-IIM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="BrowseButton" destination="4gE-OM-ulg" id="Fy8-O9-yk1"/>
+                        <outlet property="CancelButton" destination="Ovn-4N-fZ9" id="Ls9-yM-zbG"/>
+                        <outlet property="ClosePopoverButton" destination="ubb-O8-JH5" id="lBE-9n-IU7"/>
+                        <outlet property="CopyDestinationPathTextField" destination="MEL-77-njd" id="mm1-4j-E9z"/>
+                        <outlet property="CopyImageView" destination="Jmc-x9-qcf" id="h9z-Hf-kid"/>
+                        <outlet property="CopyProgressIndicator" destination="xDR-k4-5W2" id="saY-EC-Rtz"/>
+                        <outlet property="CopyStateTextField" destination="Buq-gt-kUT" id="03b-j1-wdC"/>
+                        <outlet property="CurrentCopyStateTextField" destination="ksF-Wr-A5a" id="wxf-Ax-UIH"/>
+                        <outlet property="StartCopyButton" destination="olT-Jb-93z" id="W27-cu-WDr"/>
+                    </connections>
+                </viewController>
+                <customObject id="b30-Pd-WgP" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1016" y="2506"/>
         </scene>
         <!--Payload Sender-->
         <scene sceneID="28B-92-ygz">
@@ -1053,10 +1170,10 @@ Gw
             </objects>
             <point key="canvasLocation" x="315" y="602"/>
         </scene>
-        <!--Param Manifest JSON Editor-->
+        <!--Param Manifest Editor-->
         <scene sceneID="mOt-th-Cjb">
             <objects>
-                <viewController title="Param Manifest JSON Editor" id="eGK-ct-nUq" customClass="JSONEditor" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Param Manifest Editor" id="eGK-ct-nUq" customClass="JSONEditor" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="v8S-8K-uQM">
                         <rect key="frame" x="0.0" y="0.0" width="1300" height="800"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1800,13 +1917,13 @@ Gw
         <!--PKG Merger-->
         <scene sceneID="eET-Ab-Pz4">
             <objects>
-                <viewController title="PKG Merger" id="z6R-an-Jxe" customClass="PKGMerger" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="PKG Merger" storyboardIdentifier="PKGMergerViewController" id="z6R-an-Jxe" customClass="PKGMerger" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="UIJ-bL-qEz">
                         <rect key="frame" x="0.0" y="0.0" width="1300" height="800"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NMt-3v-V2d">
-                                <rect key="frame" x="92" y="601" width="1035" height="24"/>
+                                <rect key="frame" x="20" y="702" width="1178" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="nvE-jT-hQM">
                                     <font key="font" usesAppearanceFont="YES"/>
@@ -1815,7 +1932,7 @@ Gw
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dt2-33-FUC">
-                                <rect key="frame" x="1129" y="593" width="86" height="40"/>
+                                <rect key="frame" x="1200" y="694" width="86" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="EW7-3o-LwJ">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1826,19 +1943,19 @@ Gw
                                 </connections>
                             </button>
                             <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4t8-dO-I1J">
-                                <rect key="frame" x="92" y="50" width="1117" height="466"/>
+                                <rect key="frame" x="20" y="37" width="1260" height="566"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <clipView key="contentView" drawsBackground="NO" id="DXC-WC-uwj">
-                                    <rect key="frame" x="0.0" y="0.0" width="1102" height="466"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="1245" height="566"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="ehM-3r-gUt">
-                                            <rect key="frame" x="0.0" y="0.0" width="1102" height="466"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1245" height="566"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="1102" height="466"/>
-                                            <size key="maxSize" width="1117" height="10000000"/>
+                                            <size key="minSize" width="1245" height="566"/>
+                                            <size key="maxSize" width="1245" height="10000000"/>
                                             <color key="insertionPointColor" name="textInsertionPointColor" catalog="System" colorSpace="catalog"/>
                                         </textView>
                                     </subviews>
@@ -1848,39 +1965,21 @@ Gw
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="3kf-da-C7r">
-                                    <rect key="frame" x="1102" y="0.0" width="15" height="466"/>
+                                    <rect key="frame" x="1245" y="0.0" width="15" height="566"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IwN-ZN-yHr">
-                                <rect key="frame" x="363" y="712" width="575" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Merge game or patch PKG files into a single one" id="tlD-hL-rVR">
-                                    <font key="font" metaFont="system" size="28"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
-                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-Mw-cSf">
-                                <rect key="frame" x="90" y="633" width="335" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Select a folder containing all _x.pkg files :" id="cQh-ts-an6">
-                                    <font key="font" metaFont="system" size="18"/>
-                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                </textFieldCell>
-                            </textField>
                             <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I1o-wK-rdP">
-                                <rect key="frame" x="90" y="524" width="100" height="21"/>
+                                <rect key="frame" x="18" y="611" width="139" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <textFieldCell key="cell" lineBreakMode="clipping" title="Merge Log :" id="Cgk-jx-fif">
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="PKG Merge Log :" id="Cgk-jx-fif">
                                     <font key="font" metaFont="system" size="18"/>
                                     <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Nb-d5-E1P">
-                                <rect key="frame" x="1001" y="559" width="132" height="40"/>
+                                <rect key="frame" x="1072" y="660" width="132" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <buttonCell key="cell" type="push" title="Start merging" bezelStyle="rounded" alignment="center" controlSize="large" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dh7-my-Gk1">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -1890,6 +1989,24 @@ Gw
                                     <action selector="StartMerge:" target="z6R-an-Jxe" id="x8g-Wh-8XP"/>
                                 </connections>
                             </button>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1zL-1U-btW">
+                                <rect key="frame" x="18" y="677" width="501" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Remember to rename the _sc.pkg so it will be included in the merge process." id="7VK-hc-czG">
+                                    <font key="font" metaFont="system" size="14"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UJ0-Mw-cSf">
+                                <rect key="frame" x="18" y="734" width="364" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Select a folder containing all _x.pkg files :" id="cQh-ts-an6">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
                         </subviews>
                     </view>
                     <connections>
@@ -2276,6 +2393,101 @@ Gw
             </objects>
             <point key="canvasLocation" x="-2349" y="-191"/>
         </scene>
+        <!--Make fSELF-->
+        <scene sceneID="ZJL-EZ-iRr">
+            <objects>
+                <viewController title="Make fSELF" id="evH-Nj-NCa" customClass="PS5MakefSELF" customModule="PS_Mac_Tools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="HAh-Y2-z4R">
+                        <rect key="frame" x="0.0" y="0.0" width="1300" height="800"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="efW-qO-5Rc">
+                                <rect key="frame" x="18" y="729" width="264" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Select a game backup folder :" id="g4C-5S-u8M">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField focusRingType="none" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9g-33-Zl1">
+                                <rect key="frame" x="20" y="697" width="1178" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" id="6m3-zf-G37">
+                                    <font key="font" metaFont="system" size="16"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ed-In-fbS">
+                                <rect key="frame" x="1200" y="689" width="86" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Browse" bezelStyle="rounded" alignment="center" controlSize="large" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="7NM-ne-pzn">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="BrowseBackupFolder:" target="evH-Nj-NCa" id="2BP-dQ-7T8"/>
+                                </connections>
+                            </button>
+                            <scrollView fixedFrame="YES" borderType="none" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qtJ-zC-Osy">
+                                <rect key="frame" x="20" y="20" width="1260" height="598"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <clipView key="contentView" drawsBackground="NO" id="4pn-u4-pUI">
+                                    <rect key="frame" x="0.0" y="0.0" width="1245" height="598"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView wantsLayer="YES" importsGraphics="NO" richText="NO" verticallyResizable="YES" smartInsertDelete="YES" id="ta3-1f-LQ3">
+                                            <rect key="frame" x="0.0" y="0.0" width="1245" height="598"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="1245" height="598"/>
+                                            <size key="maxSize" width="1260" height="10000000"/>
+                                            <color key="insertionPointColor" name="textInsertionPointColor" catalog="System" colorSpace="catalog"/>
+                                        </textView>
+                                    </subviews>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="XKC-2m-Cxc">
+                                    <rect key="frame" x="-100" y="-100" width="225" height="15"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="zhb-xj-Br8">
+                                    <rect key="frame" x="1245" y="0.0" width="15" height="598"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="57X-7Q-CWK">
+                                <rect key="frame" x="1112" y="655" width="92" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Make" bezelStyle="rounded" alignment="center" controlSize="large" enabled="NO" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="mwy-Qf-2Fj">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system" size="16"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="StartMake:" target="evH-Nj-NCa" id="zVL-M5-4jf"/>
+                                </connections>
+                            </button>
+                            <textField focusRingType="none" horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xaP-Jm-evn">
+                                <rect key="frame" x="18" y="626" width="156" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Make fSELF Log :" id="bSd-vZ-kvU">
+                                    <font key="font" metaFont="system" size="20"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="BackupFolderTextField" destination="h9g-33-Zl1" id="TmA-bZ-Fat"/>
+                        <outlet property="MakeButton" destination="57X-7Q-CWK" id="Q9r-zS-yex"/>
+                        <outlet property="MakeLogTextView" destination="ta3-1f-LQ3" id="7fJ-ju-Sk4"/>
+                    </connections>
+                </viewController>
+                <customObject id="mIv-hk-CZ0" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2349" y="-1160"/>
+        </scene>
     </scenes>
     <resources>
         <image name="DiscDrive" width="400" height="400"/>
@@ -2294,6 +2506,7 @@ Gw
         <image name="pencil" catalog="system" width="17" height="15"/>
         <image name="plus.circle.fill" catalog="system" width="18" height="18"/>
         <image name="questionmark.circle.fill" catalog="system" width="18" height="18"/>
+        <image name="signature" catalog="system" width="28" height="20"/>
         <image name="trash" catalog="system" width="18" height="20"/>
     </resources>
 </document>

@@ -14,15 +14,20 @@ class PKGMerger: NSViewController {
     @IBOutlet weak var StartMergeButton: NSButton!
     @IBOutlet var MergeLogTextView: NSTextView!
     
+    var MergeDownloadPath: String?
+    
     override func viewDidLoad() {
         super .viewDidLoad()
-        
         MergeLogTextView.font = NSFont.systemFont(ofSize: 16)
     }
     
     override func viewWillAppear() {
         super.viewWillAppear()
         preferredContentSize = NSSize(width: 1300, height: 800)
+        
+        if MergeDownloadPath != nil {
+            SelectedDirectoryTectField.stringValue = MergeDownloadPath!
+        }
     }
     
     var Observer1 : NSObjectProtocol?
@@ -44,16 +49,15 @@ class PKGMerger: NSViewController {
         }
     }
     
-    @IBAction func StartMerge(_ sender: NSButton) {     
-        
+    @IBAction func StartMerge(_ sender: NSButton) {
         MergeLogTextView.string = ""
         
         let MergeDirectory: String = SelectedDirectoryTectField.stringValue
         if MergePKG(MergeDir: MergeDirectory) == true {
             
             let MergeSuccessAlert = NSAlert()
-            MergeSuccessAlert.messageText = "Payload Sent!"
-            MergeSuccessAlert.informativeText = "has been sent to the PS5."
+            MergeSuccessAlert.messageText = "PKG Merged !"
+            MergeSuccessAlert.informativeText = "PKG files have been merged"
             MergeSuccessAlert.addButton(withTitle: "Close")
     
             MergeSuccessAlert.runModal()
@@ -77,33 +81,28 @@ class PKGMerger: NSViewController {
             if data.count > 0 {
                 if let str = NSString(data: data, encoding: String.Encoding.utf8.rawValue) {
                     
+                    //Update MergeLogTextView
                     if str.contains("beginning") {
-                        //Update MergeLogTextView
                         self.MergeLogTextView.string += str as String
                         self.MergeLogTextView.scrollToEndOfDocument(nil)
                     }
                     else if str.contains("25%") {
-                        //Update MergeLogTextView
                         self.MergeLogTextView.string += str as String
                         self.MergeLogTextView.scrollToEndOfDocument(nil)
                     }
                     else if str.contains("50%") {
-                        //Update MergeLogTextView
                         self.MergeLogTextView.string += str as String
                         self.MergeLogTextView.scrollToEndOfDocument(nil)
                     }
                     else if str.contains("75%") {
-                        //Update MergeLogTextView
                         self.MergeLogTextView.string += str as String
                         self.MergeLogTextView.scrollToEndOfDocument(nil)
                     }
                     else if str.contains("100%") {
-                        //Update MergeLogTextView
                         self.MergeLogTextView.string += str as String
                         self.MergeLogTextView.scrollToEndOfDocument(nil)
                     }
                     else if str.contains("[success]") {
-                        //Update MergeLogTextView
                         self.MergeLogTextView.string += str as String
                         self.MergeLogTextView.scrollToEndOfDocument(nil)
                     }
@@ -113,7 +112,6 @@ class PKGMerger: NSViewController {
             } else {
                 NotificationCenter.default.removeObserver(self.Observer1!)
             }
-            
         }
         
         Observer2 = NotificationCenter.default.addObserver(forName: Process.didTerminateNotification,
@@ -123,6 +121,7 @@ class PKGMerger: NSViewController {
         
         pkgmergeTask.launch()
         pkgmergeTask.waitUntilExit()
+        
         return true
     }
     

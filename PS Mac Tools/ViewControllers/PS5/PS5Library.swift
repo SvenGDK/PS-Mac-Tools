@@ -9,6 +9,29 @@ import Cocoa
 
 class PS5Library: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
     
+    var GamesList = [GameOrApp]()
+    var AppsList = [GameOrApp]()
+    var LibraryGameContextMenu = NSMenu()
+    var LibraryAppsContextMenu = NSMenu()
+    var GameAppAudioPlayer: Process = Process()
+    var IsSoundtrackPlaying: Bool = false
+    var PlaySoundtrackMenuItem: NSMenuItem = NSMenuItem(title: "Play game sountrack", action: #selector(PlaySoundtrack(_:)), keyEquivalent: "")
+    var CopyGameMenuItem: NSMenuItem = NSMenuItem(title: "Copy game to", action: #selector(CopySelectedItem(_:)), keyEquivalent: "")
+    
+    func AddGameLibraryContextMenu() {
+        LibraryGameContextMenu.addItem(CopyGameMenuItem)
+        LibraryGameContextMenu.addItem(PlaySoundtrackMenuItem)
+        LibraryGameContextMenu.addItem(NSMenuItem(title: "Check for game updates", action: #selector(CheckForUpdates(_:)), keyEquivalent: ""))
+        LibraryGameContextMenu.addItem(NSMenuItem(title: "Open game folder", action: #selector(OpenContainingFolder(_:)), keyEquivalent: ""))
+        LibraryGameContextMenu.addItem(NSMenuItem(title: "Browse game assets", action: #selector(BrowseGameAssets(_:)), keyEquivalent: ""))
+    }
+    
+    func AddAppLibraryContextMenu() {
+        LibraryAppsContextMenu.addItem(NSMenuItem(title: "Copy app to", action: #selector(CopySelectedItem(_:)), keyEquivalent: ""))
+        LibraryAppsContextMenu.addItem(NSMenuItem(title: "Play app sountrack", action: #selector(PlaySoundtrack(_:)), keyEquivalent: ""))
+        LibraryAppsContextMenu.addItem(NSMenuItem(title: "Open app folder", action: #selector(OpenContainingFolder(_:)), keyEquivalent: ""))
+    }
+    
     
     @IBOutlet weak var GamesTableView: NSTableView!
     @IBOutlet weak var AppsTableView: NSTableView!
@@ -19,11 +42,19 @@ class PS5Library: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
         
         GamesTableView.delegate = self
         GamesTableView.dataSource = self
+        GamesTableView.menu = LibraryGameContextMenu
         GamesTableView.reloadData()
         
         AppsTableView.delegate = self
         AppsTableView.dataSource = self
+        AppsTableView.menu = LibraryAppsContextMenu
         AppsTableView.reloadData()
+        
+        AddGameLibraryContextMenu()
+        AddAppLibraryContextMenu()
+        
+        // Set arch for homebrew usage
+        Utils().CPUTypeString()
     }
     
     override func viewWillAppear() {
@@ -42,8 +73,102 @@ class PS5Library: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
         var GameAppRequiredFirmware: String?
     }
     
-    var GamesList = [GameOrApp]()
-    var AppsList = [GameOrApp]()
+    @objc private func CopySelectedItem(_ sender: AnyObject) {
+        if !GamesTableView.selectedRowIndexes.isEmpty {
+            // Get selected item
+            let SelectedRow: Int = GamesTableView.selectedRow
+            
+            // Create a new copy window
+            let PS5StoryBoard = NSStoryboard(name: "PS5", bundle: nil)
+            let CopyVC = PS5StoryBoard.instantiateController(withIdentifier: "PS5CopyVC") as! PS5CopyViewController
+            let CopyPopover = NSPopover()
+            
+            CopyVC.SourceFolder = GamesList[SelectedRow].GameAppPath!
+            
+            CopyPopover.contentViewController = CopyVC
+            CopyPopover.show(relativeTo: GamesTableView.rect(ofRow: SelectedRow), of: GamesTableView, preferredEdge: .maxX)
+        }
+    }
+    
+    @objc private func PlaySoundtrack(_ sender: AnyObject) {
+        // Kill previous process if still running
+        if GameAppAudioPlayer.isRunning {
+            GameAppAudioPlayer.terminate()
+            GameAppAudioPlayer = Process()
+            IsSoundtrackPlaying = false
+            PlaySoundtrackMenuItem.title = "Play game sountrack"
+        } else {
+            if !GamesTableView.selectedRowIndexes.isEmpty {
+                // Get selected item
+                let SelectedRow: Int = GamesTableView.selectedRow
+                let SelectedItem: GameOrApp = GamesList[SelectedRow]
+                
+                if FileManager.default.fileExists(atPath: SelectedItem.GameAppPath! + "sce_sys/snd0.at9") {
+                    // Play new soundtrack
+                    let ffPlay = Bundle.main.path(forResource: "ffplay", ofType: "")
+                    GameAppAudioPlayer.launchPath = "/bin/sh"
+                    GameAppAudioPlayer.arguments = ["-c", "'" + ffPlay! + "' -nodisp -autoexit '" + SelectedItem.GameAppPath! + "sce_sys/snd0.at9'"]
+                    GameAppAudioPlayer.launch()
+                    PlaySoundtrackMenuItem.title = "Stop game sountrack"
+                    IsSoundtrackPlaying = true
+                }
+            }
+        }
+    }
+    
+    @objc private func CheckForUpdates(_ sender: AnyObject) {
+        if !GamesTableView.selectedRowIndexes.isEmpty {
+            // Get selected item
+            let SelectedRow: Int = GamesTableView.selectedRow
+            let SelectedGameID: String = GamesList[SelectedRow].GameAppID!
+
+            // Create a new window with the assets browser view controller
+            let GameUpdatesStoryBoard = NSStoryboard(name: "PS5GameUpdates", bundle: nil)
+            let GameUpdatesVC = GameUpdatesStoryBoard.instantiateController(withIdentifier: "GameUpdatesViewController") as! GameUpdates
+            let GameUpdatesWC = GameUpdatesStoryBoard.instantiateController(withIdentifier: "GameUpdatesWindowController") as! NSWindowController
+            
+            GameUpdatesVC.LibraryDelegate = self
+            GameUpdatesVC.SearchForGameID = SelectedGameID
+            GameUpdatesWC.contentViewController = GameUpdatesVC
+            GameUpdatesWC.showWindow(self)
+        } else {
+            // Create a new window with the game updates view controller
+            let GameUpdatesStoryBoard = NSStoryboard(name: "PS5GameUpdates", bundle: nil)
+            let GameUpdatesVC = GameUpdatesStoryBoard.instantiateController(withIdentifier: "GameUpdatesViewController") as! GameUpdates
+            let GameUpdatesWC = GameUpdatesStoryBoard.instantiateController(withIdentifier: "GameUpdatesWindowController") as! NSWindowController
+            
+            GameUpdatesVC.LibraryDelegate = self
+            GameUpdatesWC.contentViewController = GameUpdatesVC
+            GameUpdatesWC.showWindow(self)
+        }
+    }
+    
+    @objc private func OpenContainingFolder(_ sender: AnyObject) {
+        if !GamesTableView.selectedRowIndexes.isEmpty {
+            // Get selected item
+            let SelectedRow: Int = GamesTableView.selectedRow
+            let SelectedItem: GameOrApp = GamesList[SelectedRow]
+            NSWorkspace.shared.open(URL(fileURLWithPath: SelectedItem.GameAppPath!))
+        }
+    }
+    
+    @objc private func BrowseGameAssets(_ sender: AnyObject) {
+        if !GamesTableView.selectedRowIndexes.isEmpty {
+            // Get selected item
+            let SelectedRow: Int = GamesTableView.selectedRow
+            let SelectedItem: GameOrApp = GamesList[SelectedRow]
+            
+            // Create a new window with the assets browser view controller
+            let AssetsBrowserStoryBoard = NSStoryboard(name: "PS5AssetsBrowser", bundle: nil)
+            let AssetsBrowserVC = AssetsBrowserStoryBoard.instantiateController(withIdentifier: "AssetsBrowserViewController") as! AssetsBrowser
+            let AssetsBrowserWC = AssetsBrowserStoryBoard.instantiateController(withIdentifier: "AssetsBrowserWindowController") as! NSWindowController
+            
+            AssetsBrowserVC.AssetsFilePath = SelectedItem.GameAppPath!
+            AssetsBrowserWC.window?.title = SelectedItem.GameAppTitle! + " @ " + SelectedItem.GameAppPath!
+            AssetsBrowserWC.contentViewController = AssetsBrowserVC
+            AssetsBrowserWC.showWindow(self)
+        }
+    }
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         if tableView.identifier == NSUserInterfaceItemIdentifier(rawValue: "GamesTableView") {
@@ -237,6 +362,21 @@ class PS5Library: NSViewController, NSTableViewDelegate, NSTableViewDataSource {
             AppsTableView.reloadData()
         }
         
+    }
+    
+    func MergeGamePatch(_ MergePath: String) {
+        
+        // Switch to PKG Merger & set path
+        if let PS5Storyboard = self.storyboard,
+           let TabVC = PS5Storyboard.instantiateController(withIdentifier: "PS5TabVC") as? PS5TabViewController,
+           let MainWin = NSApplication.shared.windows.first(where: { $0.title == "PS5 Tools" }) {
+            MainWin.contentViewController = TabVC
+            TabVC.selectedTabViewItemIndex = 6
+        }
+        
+        let PS5StoryBoard = NSStoryboard(name: "PS5", bundle: nil)
+        let PKGMergeVC = PS5StoryBoard.instantiateController(withIdentifier: "PKGMergerViewController") as! PKGMerger
+        PKGMergeVC.MergeDownloadPath = MergePath
     }
     
 }

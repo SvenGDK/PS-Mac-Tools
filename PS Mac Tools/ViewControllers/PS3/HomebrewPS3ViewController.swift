@@ -52,7 +52,7 @@ class HomebrewPS3ViewController: NSViewController, NSTableViewDelegate, NSTableV
     }
     
     func urlSession(_ dlSession: URLSession, downloadTask: URLSessionDownloadTask, didFinishDownloadingTo location: URL) {
-        let documentsUrl =  FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
+        let documentsUrl = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first
         let destinationUrl = documentsUrl!.appendingPathComponent(self.DLUrl!.lastPathComponent)
         let dataFromURL = NSData(contentsOf: location)
         dataFromURL?.write(to: destinationUrl, atomically: true)

@@ -85,7 +85,6 @@ class PS5Downloads: NSViewController, NSTableViewDelegate, NSTableViewDataSource
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "6.50 System Firwmware", Info: "Updates to the corresponding system firmware."))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "BD-JB ELF Loader v1.6.2", Info: "Blu Ray Java exploit - up to 4.51"))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "etaHEN by LightningMods", Info: "https://github.com/LightningMods/etaHEN"))
-        AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "etaHEN with cheats", Info: "https://github.com/LightningMods/etaHEN"))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "FTPS5", Info: "FTP Server for PS5 3.00 - 4.51"))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "Homebrew Store by LightningMods", Info: "A homebrew store for the PS4/5."))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "Debug Settings PKG", Info: "Installs a shortcut on the home screen to access the Debug Settings quickly."))
@@ -93,7 +92,7 @@ class PS5Downloads: NSViewController, NSTableViewDelegate, NSTableViewDataSource
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "Internet Browser PKG", Info: "Installs a shortcut for the hidden Web Browser on the home screen"))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "PS Multi Tools Host PKG", Info: "Installs a shortcut to the PS Multi Tools exploit host on the home screen"))
         AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "Store Preview PKG", Info: "Installs a 'Store Preview' shortcut on the home screen"))
-        AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "PS5-kstuff", Info: "Enables PS4 fPKG & backups on 4.03 and 4.50"))
+        AvailableHomebrewFirmwares.append(AvailableHomebrewOrFirmware(Name: "PS5-kstuff", Info: "Enables PS4 fPKG & fSELF on 3.00, 3.20, 3.21, 4.03, 4.50 & 4.51"))
         
     }
     
@@ -251,12 +250,7 @@ class PS5Downloads: NSViewController, NSTableViewDelegate, NSTableViewDataSource
                 DownloadSessionTask = DownloadSession!.downloadTask(with: DownloadURL!)
                 DownloadSessionTask!.resume()
             case "etaHEN by LightningMods":
-                DownloadURL = URL(string: "https://github.com/LightningMods/etaHEN/releases/download/1.11b/etaHEN-1.1b.bin")
-                DownloadSession = URLSession(configuration: DownloadSessionConfig, delegate: self, delegateQueue: nil)
-                DownloadSessionTask = DownloadSession!.downloadTask(with: DownloadURL!)
-                DownloadSessionTask!.resume()
-            case "etaHEN with cheats":
-                DownloadURL = URL(string: "https://github.com/LightningMods/etaHEN/releases/download/1.11b/etaHENwithcheats-1.1b.bin")
+                DownloadURL = URL(string: "https://github.com/LightningMods/etaHEN/releases/download/1.3b/etaHEN-1.3B.bin")
                 DownloadSession = URLSession(configuration: DownloadSessionConfig, delegate: self, delegateQueue: nil)
                 DownloadSessionTask = DownloadSession!.downloadTask(with: DownloadURL!)
                 DownloadSessionTask!.resume()

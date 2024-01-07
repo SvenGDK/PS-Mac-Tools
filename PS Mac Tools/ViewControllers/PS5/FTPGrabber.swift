@@ -142,7 +142,11 @@ class FTPGrabber: NSViewController, NSComboBoxDelegate {
         let SavePath: String = SelectedDownloadFolderTextField.stringValue
         
         let wgetTask = Process()
-        wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        if Utils().Arch == "x86" {
+            wgetTask.launchPath = "/usr/local/bin/wget"
+        } else {
+            wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        }
         wgetTask.arguments = ["-m",
                               "-nH",
                               "--cut-dirs=3",
@@ -304,7 +308,11 @@ class FTPGrabber: NSViewController, NSComboBoxDelegate {
         let SavePath: String = SelectedDownloadFolderTextField.stringValue + "/" + App0FolderName + "/sce_sys/"
         
         let wgetTask = Process()
-        wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        if Utils().Arch == "x86" {
+            wgetTask.launchPath = "/usr/local/bin/wget"
+        } else {
+            wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        }
         wgetTask.arguments = ["-m",
                           "-nH",
                           "--cut-dirs=3",
@@ -347,7 +355,11 @@ class FTPGrabber: NSViewController, NSComboBoxDelegate {
         let SavePath: String = SelectedDownloadFolderTextField.stringValue + "/" + App0FolderName + "/sce_sys/"
         
         let wgetTask = Process()
-        wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        if Utils().Arch == "x86" {
+            wgetTask.launchPath = "/usr/local/bin/wget"
+        } else {
+            wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        }
         wgetTask.arguments = ["-m",
                           "-nH",
                           "--cut-dirs=4",
@@ -442,7 +454,11 @@ class FTPGrabber: NSViewController, NSComboBoxDelegate {
         let SavePath: String = SelectedDownloadFolderTextField.stringValue + "/" + App0FolderName + "/sce_sys/uds/"
         
         let wgetTask = Process()
-        wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        if Utils().Arch == "x86" {
+            wgetTask.launchPath = "/usr/local/bin/wget"
+        } else {
+            wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        }
         wgetTask.arguments = ["-P",
                           SavePath,
                           FTPAddress]
@@ -489,7 +505,11 @@ class FTPGrabber: NSViewController, NSComboBoxDelegate {
         let SavePath: String = SelectedDownloadFolderTextField.stringValue + "/" + App0FolderName + "/sce_sys/trophy2/"
         
         let wgetTask = Process()
-        wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        if Utils().Arch == "x86" {
+            wgetTask.launchPath = "/usr/local/bin/wget"
+        } else {
+            wgetTask.launchPath = "/opt/homebrew/bin/wget"
+        }
         wgetTask.arguments = ["-P",
                           SavePath,
                           FTPAddress]
@@ -535,12 +555,22 @@ class FTPGrabber: NSViewController, NSComboBoxDelegate {
         self.TransferProgressIndicator.startAnimation(self)
         
         let netcatTask = Process()
-        let Args: String = "/opt/homebrew/bin/netcat -w 3 " +
-        PS5IPAddressTextField.stringValue + 
-        " " +
-        PS5PortTextField.stringValue +
-        " | /opt/homebrew/bin/pv > " +
-        SelectedDownloadFolderTextField.stringValue + "/selfdump.tar"
+        var Args: String = ""
+        if Utils().Arch == "x86" {
+            Args = "/usr/local/bin/netcat -w 3 " +
+            PS5IPAddressTextField.stringValue +
+            " " +
+            PS5PortTextField.stringValue +
+            " | /opt/homebrew/bin/pv > " +
+            SelectedDownloadFolderTextField.stringValue + "/selfdump.tar"
+        } else {
+            Args = "/opt/homebrew/bin/netcat -w 3 " +
+            PS5IPAddressTextField.stringValue +
+            " " +
+            PS5PortTextField.stringValue +
+            " | /opt/homebrew/bin/pv > " +
+            SelectedDownloadFolderTextField.stringValue + "/selfdump.tar"
+        }
         
         netcatTask.launchPath = "/bin/sh"
         netcatTask.arguments = ["-c", Args]
