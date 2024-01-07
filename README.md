@@ -85,5 +85,6 @@ PS Mac Tools uses the following tools from other developers:
 | `ps3mca-ps1` |  | https://github.com/israpps/PAKerUtility
 | `psexe2rom` | MottZilla, Alex Free | https://github.com/alex-free/psexe2rom
 | `pkg_merge` | Tustin, aldo-o | https://github.com/aldo-o/pkg-merge
+| `make_fself` | LightningMods, flatz | 
 
 All tools with the exception of 'ffplay' are re-compiled for ARM64 and x86_64 and bundled to a universal MacOS binary using 'lipo'.
