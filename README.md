@@ -17,7 +17,7 @@ The macOS version of PS Multi Tools.</br>Contains tools & backup manager for PS1
 </details>
 
 <details>
-  <summary>v1.5 contains following tools</summary>
+  <summary>v2 contains following tools</summary>
   
 #### PS1
 - Backup Manager (Read games only)
@@ -52,7 +52,10 @@ The macOS version of PS Multi Tools.</br>Contains tools & backup manager for PS1
 - PKG Merger
 - Param & Manifest JSON Editor
 - Blu Ray disc burner
+- Game Patches Downloader
+- Make_fSELF tool
 - Downloads & other useful resources
+
 
 #### PSP
 - Backup Manager (Read games only)
@@ -87,4 +90,4 @@ PS Mac Tools uses the following tools from other developers:
 | `pkg_merge` | Tustin, aldo-o | https://github.com/aldo-o/pkg-merge
 | `make_fself` | LightningMods, flatz | 
 
-All tools with the exception of 'ffplay' are re-compiled for ARM64 and x86_64 and bundled to a universal MacOS binary using 'lipo'.
+All tools are re-compiled for ARM64 and x86_64 and bundled to a universal MacOS binary using 'lipo'.
